@@ -1,3 +1,5 @@
+# [SC] This client is for a demo purpose only. The actual client code should be integrated into Django code.
+
 import zmq
 import json
 import uuid
@@ -26,8 +28,7 @@ poller.register(socket, zmq.POLLIN)
 
 # [SC] send a request
 print("Sending a request to the remove service")
-#socket.send_string("What is the average temperature for each neighborhood in Amsterdam")
-socket.send_string("What is the population of Utrecht")
+socket.send_string("What is the average temperature for each neighborhood in Amsterdam")
 
 # [SC] wait for a reply
 print("Waiting for a reply ...")

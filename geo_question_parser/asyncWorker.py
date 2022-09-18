@@ -1,5 +1,4 @@
-from geo_question_parser import QuestionParser, TypesToQueryConverter
-
+import os
 import zmq
 import threading
 import json
@@ -11,16 +10,18 @@ import socket
 
 import signal
 
+from geo_question_parser import QuestionParser, TypesToQueryConverter
+
 # [SC][TODO]
-import time
+#import time
 
 
 # [SC] to capture the keyboard interrput command (Ctrl + C)
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 
-# [SC][TODO] these should be set from a command line
-workerInstanceCount = 5
-frontendPort = "5570"
+# [SC] these should be set from a command line
+workerInstanceCount = os.environ['INST_COUNT']
+frontendPort = os.environ['FRONT_PORT']
 
 defWorkerInstanceCount = 10
 defIp = "127.0.0.1"
@@ -93,8 +94,7 @@ class QparserWorker(threading.Thread):
             qParsed = {}
             
             try:
-                # [SC][TODO] do work here
-                # [SC][TODO] serialize the final output into a string and assign to the variable 'msg'
+                # [SC] Starting parsing here
                 parser = QuestionParser(None)
                 qParsed = parser.parseQuestion(qStr)
                 Logger.cPrint(Logger.INFO_TYPE, methodName, f"Parsed the question '{qStr}'")

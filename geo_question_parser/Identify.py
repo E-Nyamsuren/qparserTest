@@ -21,8 +21,8 @@ from antlr4 import InputStream # [SC][ADDED]
 from antlr4 import CommonTokenStream # [SC][ADDED]
 from antlr4.tree.Trees import Trees
 
-from geo_question_parser.grammar.GeoAnQuLexer import GeoAnQuLexer
-from geo_question_parser.grammar.GeoAnQuParser import GeoAnQuParser
+from Grammar.GeoAnQuLexer import GeoAnQuLexer
+from Grammar.GeoAnQuParser import GeoAnQuParser
 
 # from antlr4.error.ErrorListener import ErrorListener
 
