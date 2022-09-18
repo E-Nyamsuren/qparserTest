@@ -1,0 +1,1942 @@
+[
+    {
+        "id": 1,
+        "description": "What is the percentage of households within 2000 metres from the supermarkets for each district in Amsterdam",
+        "lhs": {
+            "type": "object"
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": 2,
+        "description": "What is the percentage of households within 2000 metres from the supermarkets for each district in Amsterdam",
+        "lhs": {
+            "type": "distfield",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": 112,
+        "description": "What is the percentage of households within 2000 metres from the supermarkets for each district in Amsterdam",
+        "lhs": {
+            "type": "boolfield",
+            "inputType": [
+                "distfield"
+            ]
+        },
+        "rhs": "R(Loc,Bool)"
+    },
+    {
+        "id": 3,
+        "description": "What is the percentage of households within 2000 metres from the supermarkets for each district in Amsterdam",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "inputType": [
+                "amount",
+                "amount"
+            ],
+            "key": "object"
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": 4,
+        "description": "What is the percentage of households within 2000 metres from the supermarkets for each district in Amsterdam",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "era",
+            "inputType": [
+                "object",
+                "object"
+            ],
+            "key": "object"
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": 5,
+        "description": "What is the crime density within the buffer area of the shortest path from home to workplace in Amsterdam",
+        "lhs": {
+            "type": "network",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Obj)"
+    },
+    {
+        "id": 113,
+        "description": "What is the crime density within the buffer area of the shortest path from home to workplace in Amsterdam",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "network"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": 6,
+        "description": "What is the crime density within the buffer area of the shortest path from home to workplace in Amsterdam",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira"
+        },
+        "rhs": "R(_,Ratio)"
+    },
+    {
+        "id": 7,
+        "description": "What is the crime density within the buffer area of the shortest path from home to workplace in Amsterdam",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "inputType": [
+                "boolfield",
+                "proportion"
+            ],
+            "key": "object"
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": 8,
+        "description": "What is the total walking time to the nearest waste disposal places from each household in the Amsterdam city centre",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ratio",
+            "inputType": [
+                "objectquality"
+            ],
+            "key": "object"
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": 114,
+        "description": "What is the total walking time to the nearest waste disposal places from each household in the Amsterdam city centre",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": 115,
+        "description": "What is the crime density within the buffer area of the shortest path from home to workplace in Amsterdam",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": 9,
+        "description": "What is the density of residential areas for each neighbourhood in Amsterdam",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "nominal"
+        },
+        "rhs": "R(Loc,Nom)"
+    },
+    {
+        "id": 11,
+        "description": "What is the density of residential areas for each neighbourhood in Amsterdam",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": 12,
+        "description": "What is the density of residential areas for each neighbourhood in Amsterdam",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era",
+            "inputType": [
+                "field",
+                "object"
+            ],
+            "key": "object"
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": 117,
+        "description": "What is the density of street intersections for each neighbourhood in Amsterdam",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "inputType": [
+                "amount",
+                "covamount"
+            ],
+            "key": "object"
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": 13,
+        "description": "What is the average temperature for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "interval"
+        },
+        "rhs": "R(Loc,Itv)"
+    },
+    {
+        "id": 14,
+        "description": "What is the average temperature for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "interval",
+            "inputType": [
+                "field",
+                "object"
+            ],
+            "key": "object"
+        },
+        "rhs": "R(Obj,Itv)"
+    },
+    {
+        "id": 116,
+        "description": "What is the proportion of noise larger than 70 db for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ordinal"
+        },
+        "rhs": "R(Loc,Ord)"
+    },
+    {
+        "id": 15,
+        "description": "What is the proportion of noise larger than 70 db for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "inputType": [
+                "covamount",
+                "covamount"
+            ],
+            "key": "object"
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": 18,
+        "description": "What is the travel distance from car accidents to the nearest hospitals in Amsterdam",
+        "lhs": {
+            "type": "event"
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": 19,
+        "description": "What is the travel distance from car accidents to the nearest hospitals in Amsterdam",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": 20,
+        "description": "What is the potentials of solar power for each rooftop in Amsterdam",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ratio"
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": 21,
+        "description": "What is the potentials of solar power for each rooftop in Amsterdam",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era",
+            "inputType": [
+                "field",
+                "object"
+            ],
+            "key": "object"
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": 201,
+        "description": "What are the potentials of solar power larger than 30 kilowatt hour for each rooftop in Amsterdam",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ratio",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": 202,
+        "description": "What is the percentage of households within 2000 metres from the supermarkets for each district in Amsterdam",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": 203,
+        "description": "What is the proportion of noise larger than 70 db for each neighbourhood in Amsterdam",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ordinal",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Ord)"
+    },
+    {
+        "id": "2-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "distfield",
+            "inputType": [
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "3-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "amount",
+                "conamount"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "3-IT2",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "amount",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "3-IT3",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "amount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "3-IT6",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "conamount"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "3-IT7",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "3-IT8",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "3-IT9",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "3-IT12",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "eveconamount",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "3-IT13",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "eveconamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "3-IT14",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "3-IT18",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "3-IT19",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "4-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "object",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "4-IT3",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "serviceobj",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "5-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "network",
+            "inputType": [
+                "object",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Obj)"
+    },
+    {
+        "id": "5-IT3",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "network",
+            "inputType": [
+                "serviceobj",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Obj)"
+    },
+    {
+        "id": "7-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "objconobjconpro"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "7-IT2",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "covpro"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "7-IT3",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "eveconobjconpro"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "115-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "object",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "115-IT3",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "serviceobj",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "11-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era",
+            "inputType": [
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "12-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "field",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "12-IT2",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "12-IT3",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "12-IT4",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "12-IT5",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "interval",
+            "key": "object",
+            "inputType": [
+                "field",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Itv)"
+    },
+    {
+        "id": "14-IT2",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "interval",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Itv)"
+    },
+    {
+        "id": "14-IT3",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "interval",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Itv)"
+    },
+    {
+        "id": "14-IT4",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "interval",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Itv)"
+    },
+    {
+        "id": "14-IT5",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "interval",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Itv)"
+    },
+    {
+        "id": "19-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "event",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "21-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "field",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "21-IT2",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "21-IT3",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "21-IT4",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "21-IT5",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "201-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ratio",
+            "inputType": [
+                "boolfield"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "201-IT2",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ratio",
+            "inputType": [
+                "distfield"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "202-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "boolfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "203-IT1",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ordinal",
+            "inputType": [
+                "boolfield"
+            ]
+        },
+        "rhs": "R(Loc,Ord)"
+    },
+    {
+        "id": "203-IT2",
+        "description": "Derived based on inputType substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ordinal",
+            "inputType": [
+                "distfield"
+            ]
+        },
+        "rhs": "R(Loc,Ord)"
+    },
+    {
+        "id": "4-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "8-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "objectquality"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "8-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "objectquality"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "8-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "objectquality"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "114-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "count",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "114-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "era",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "114-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "ira",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "115-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "count",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "115-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "era",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "115-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ira",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "9-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "count"
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "9-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ira"
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "9-ML3",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "era"
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "9-ML5",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "loc"
+        },
+        "rhs": "R(Loc,Nom)"
+    },
+    {
+        "id": "9-ML6",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "boolean"
+        },
+        "rhs": "R(Loc,Bool)"
+    },
+    {
+        "id": "11-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "count",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "12-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-ML3",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ratio",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "19-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "count",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "19-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "era",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "19-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ira",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "21-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "201-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "count",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "201-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "era",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "201-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ira",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "203-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "interval",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Itv)"
+    },
+    {
+        "id": "4-IT1-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "object",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "4-IT3-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "serviceobj",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "115-IT1-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "count",
+            "inputType": [
+                "object",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "115-IT1-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "era",
+            "inputType": [
+                "object",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "115-IT1-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ira",
+            "inputType": [
+                "object",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "115-IT3-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "count",
+            "inputType": [
+                "serviceobj",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "115-IT3-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "era",
+            "inputType": [
+                "serviceobj",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "115-IT3-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ira",
+            "inputType": [
+                "serviceobj",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "11-IT1-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "count",
+            "inputType": [
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "12-IT1-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "field",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "12-IT2-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "12-IT3-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "12-IT4-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "12-IT5-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT1-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "field",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT1-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "field",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT1-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "field",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT1-ML3",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ratio",
+            "key": "object",
+            "inputType": [
+                "field",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT2-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT2-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT2-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT2-ML3",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ratio",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT3-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT3-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT3-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT3-ML3",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ratio",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT4-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT4-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT4-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT4-ML3",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ratio",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT5-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT5-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT5-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "14-IT5-ML3",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ratio",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "19-IT1-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "count",
+            "inputType": [
+                "event",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "19-IT1-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "era",
+            "inputType": [
+                "event",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "19-IT1-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ira",
+            "inputType": [
+                "event",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "21-IT1-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "field",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "21-IT2-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "21-IT3-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "21-IT4-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "21-IT5-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "serviceobj"
+            ]
+        },
+        "rhs": "R(Obj,Ratio)"
+    },
+    {
+        "id": "201-IT1-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "count",
+            "inputType": [
+                "boolfield"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "201-IT1-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "era",
+            "inputType": [
+                "boolfield"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "201-IT1-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ira",
+            "inputType": [
+                "boolfield"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "201-IT2-ML0",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "count",
+            "inputType": [
+                "distfield"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "201-IT2-ML1",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "era",
+            "inputType": [
+                "distfield"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "201-IT2-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ira",
+            "inputType": [
+                "distfield"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "203-IT1-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "interval",
+            "inputType": [
+                "boolfield"
+            ]
+        },
+        "rhs": "R(Loc,Itv)"
+    },
+    {
+        "id": "203-IT2-ML2",
+        "description": "Derived based on measureLevel substypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "interval",
+            "inputType": [
+                "distfield"
+            ]
+        },
+        "rhs": "R(Loc,Itv)"
+    }
+]

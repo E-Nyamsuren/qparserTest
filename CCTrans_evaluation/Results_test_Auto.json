@@ -1,0 +1,7659 @@
+[
+	{
+		"question": "What is the slope in Utrecht",
+		"cleaned_Question": "What is slope in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"field": [
+			"slope"
+		],
+		"ner_Question": "what is field0 ratio in placename0",
+		"parseTreeStr": "(start what is (measure (coreC field 0 ratio)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "slope",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the Euclidean distance to recreational sites in Utrecht",
+		"cleaned_Question": "What is Euclidean distance to recreational sites in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"field": [
+			"euclidean distance"
+		],
+		"object": [
+			"recreational sites"
+		],
+		"ner_Question": "what is field0 ratio to object0 in placename0",
+		"parseTreeStr": "(start what is (measure (coreC field 0 ratio) to (coreC object 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "recreational sites"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "euclidean distance",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the Euclidean distance to schools in Utrecht",
+		"cleaned_Question": "What is Euclidean distance to schools in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"field": [
+			"euclidean distance"
+		],
+		"object": [
+			"schools"
+		],
+		"ner_Question": "what is field0 ratio to object0 in placename0",
+		"parseTreeStr": "(start what is (measure (coreC field 0 ratio) to (coreC object 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "schools"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "euclidean distance",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the least cost route from school to the closest road intersection based on slope and land use in Utrecht",
+		"cleaned_Question": "What is least cost route from school to closest road intersection based on slope and land use in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"field": [
+			"least cost route"
+		],
+		"object": [
+			"school",
+			"road intersection"
+		],
+		"ner_Question": "what is field0 nominal from object0 to closest object1 based on slope and land use in placename0",
+		"parseTreeStr": "(start what is (measure (coreC field 0 nominal) from (origin (objectC object 0)) to (destination (extreDist closest) (objectC object 1))) on (temEx and in placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "school"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "road intersection"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "2",
+					"keyword": "least cost route",
+					"measureLevel": "nominal"
+				}
+			],
+			"temporalEx": [],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the interpolated surface of ozone concentration in California",
+		"cleaned_Question": "What is interpolated surface of ozone concentration in California",
+		"placename": [
+			"California"
+		],
+		"field": [
+			"ozone concentration",
+			"interpolated surface"
+		],
+		"ner_Question": "what is field1 ratio of field0 ratio in placename0",
+		"parseTreeStr": "(start what is (measure (coreC field 1 ratio) of (coreC field 0 ratio)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "ozone concentration",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "interpolated surface",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"California"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the shortest network-based path through the Palace of Fine Arts, Ferry Building and de Young Meseum in San Francisco",
+		"cleaned_Question": "What is shortest network based path through Palace of Fine Arts , Ferry Building and de Young Meseum in San Francisco",
+		"placename": [
+			"Palace of Fine Arts",
+			"Ferry Building",
+			"de Young Meseum",
+			"San Francisco"
+		],
+		"network": [
+			"shortest network based path"
+		],
+		"ner_Question": "what is network0 through placename0 , placename1 and placename2 in placename3",
+		"parseTreeStr": "(start what is (measure (networkC network 0) through (destination (objectC placename 0) (objectC placename 1) and (objectC placename 2))) in (extent placename 3))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"placename"
+					],
+					"id": "0",
+					"keyword": "de Young Meseum"
+				},
+				{
+					"type": [
+						"placename"
+					],
+					"id": "1",
+					"keyword": "Ferry Building"
+				},
+				{
+					"type": [
+						"placename"
+					],
+					"id": "2",
+					"keyword": "Palace of Fine Arts"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "3",
+					"keyword": "shortest network based path"
+				}
+			],
+			"extent": [
+				"San Francisco"
+			],
+			"transformation": []
+		}
+	},
+	{
+		"question": "What are the four fire stations with shortest network-based paths to 1202 Twin Peaks Blvd in San Francisco",
+		"cleaned_Question": "What are 4 fire stations with shortest network based paths to 1202 Twin Peaks Blvd in San Francisco",
+		"placename": [
+			"Twin Peaks Blvd",
+			"San Francisco"
+		],
+		"date": [
+			"1202"
+		],
+		"object": [
+			"fire stations"
+		],
+		"network": [
+			"shortest network based paths"
+		],
+		"ner_Question": "what are 4 object0 with network0 to edate0 placename0 in placename1",
+		"parseTreeStr": "(start what are (measure 4 (coreC object 0)) with network 0 to edate 0 placename 0 in placename 1)",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				}
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the four fire stations within 3 minutes of travel time from a fire in San Francisco",
+		"cleaned_Question": "What are 4 fire stations within 3 minutes of travel time from fire in San Francisco",
+		"placename": [
+			"San Francisco"
+		],
+		"time": [
+			"3 minutes"
+		],
+		"object": [
+			"fire stations"
+		],
+		"event": [
+			"fire"
+		],
+		"network": [
+			"travel time"
+		],
+		"ner_Question": "what are 4 object0 within etime0 of network0 from event0 in placename0",
+		"parseTreeStr": "(start what are (measure 4 (coreC object 0)) (condition (topoR within) (serviceObj (time etime 0) of (networkC network 0) from (origin (eventC event 0)))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "fire"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "travel time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "fire stations"
+				}
+			],
+			"extent": [
+				"San Francisco"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"2"
+					],
+					"after": [
+						"4_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within 3 minutes, 5 minutes, and 10 minutes from six warehouses in Paris",
+		"cleaned_Question": "What areas are within 3 minutes , 5 minutes , and 10 minutes from 6 warehouses in Paris",
+		"placename": [
+			"Paris"
+		],
+		"time": [
+			"3 minutes , 5 minutes",
+			"10 minutes"
+		],
+		"object": [
+			"warehouses"
+		],
+		"ner_Question": "what areas are within etime0 , and etime1 from 6 object0 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (serviceObj (time etime 0) and (time etime 1) from (origin 6 (objectC object 0)))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "warehouses"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "2",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "3",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Paris"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"2"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of stores for each warehouse service area in Paris",
+		"cleaned_Question": "What is number of stores for each warehouse service area in Paris",
+		"placename": [
+			"Paris"
+		],
+		"object": [
+			"stores",
+			"warehouse service area"
+		],
+		"conamount": [
+			"number"
+		],
+		"ner_Question": "what is conamount0 count of object0 for each object1 in placename0",
+		"parseTreeStr": "(start what is (measure (coreC conamount 0 count) of (coreC object 0)) for each (support (coreC object 1)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "warehouse service area"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "stores"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"Paris"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the delivery cost from warehouse to stores within 10 minute driving time in Paris",
+		"cleaned_Question": "What is delivery cost from warehouse to stores within 10 minute driving time in Paris",
+		"placename": [
+			"Paris"
+		],
+		"time": [
+			"10 minute"
+		],
+		"object": [
+			"warehouse",
+			"stores"
+		],
+		"network": [
+			"delivery cost",
+			"driving time"
+		],
+		"ner_Question": "what is network0 from object0 to object1 within etime0 network1 in placename0",
+		"parseTreeStr": "(start what is (measure (networkC network 0) from (origin (objectC object 0)) to (destination (objectC object 1))) (condition (topoR within) (serviceObj (time etime 0) (networkC network 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"network"
+					],
+					"id": "0",
+					"keyword": "driving time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "2",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "3",
+					"keyword": "warehouse"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "stores"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "5",
+					"keyword": "delivery cost"
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "6",
+					"keyword": "road data"
+				}
+			],
+			"extent": [
+				"Paris"
+			],
+			"transformation": []
+		}
+	},
+	{
+		"question": "What is the fastest delivery route through 21 stores in Paris",
+		"cleaned_Question": "What is fastest delivery route through 21 stores in Paris",
+		"placename": [
+			"Paris"
+		],
+		"object": [
+			"stores"
+		],
+		"network": [
+			"delivery route"
+		],
+		"ner_Question": "what is fastest network0 through 21 object0 in placename0",
+		"parseTreeStr": "(start what is (extremaR fastest) (measure (networkC network 0) through (destination 21 (objectC object 0))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "stores"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "delivery route"
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "2",
+					"keyword": "road data"
+				}
+			],
+			"extent": [
+				"Paris"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"2"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the fastest routes for three 15000-pound capacity trucks to meet the delivery demands of 25 grocery stores in Utrecht",
+		"cleaned_Question": "What are fastest routes for 3 pound capacity trucks to meet delivery demands of 25 grocery stores in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"quantity": [
+			"3 pound"
+		],
+		"object": [
+			"grocery stores"
+		],
+		"network": [
+			"fastest routes"
+		],
+		"ner_Question": "what are network0 for equantity0 capacity trucks to meet delivery demands of 25 object0 in placename0",
+		"parseTreeStr": "(start what are (measure (networkC network 0) for (origin (grid (quantity equantity 0)))) (measure1 to coreC) (condition of (compareR <missing <INVALID>>) 25 (coreC object 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "grocery stores"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "fastest routes"
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "2",
+					"keyword": "road data"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": []
+		}
+	},
+	{
+		"question": "What are the fastest routes for three vans to transport customers from their homes to hospitals between 8 am to 10 am in Utrecht",
+		"cleaned_Question": "What are fastest routes for 3 vans to transport customers from homes to hospitals between 8 am to 10 am in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"time": [
+			"between 8"
+		],
+		"object": [
+			"customers",
+			"hospitals"
+		],
+		"network": [
+			"fastest routes"
+		],
+		"ner_Question": "what are network0 for 3 vans to transport object0 from homes to object1 etime0 am to 10 am in placename0",
+		"parseTreeStr": "(start what are (measure (networkC network 0) for (origin 3)) (measure1 to (coreC or object 0)) from temEx to)"
+	},
+	{
+		"question": "What are the three locations for new stores that maximize attendance in Utrecht",
+		"cleaned_Question": "What are 3 locations for new stores that maximize attendance in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"object": [
+			"stores"
+		],
+		"objectquality": [
+			"attendance"
+		],
+		"ner_Question": "what are 3 locations for new object0 that maximize objectquality0 ratio in placename0",
+		"parseTreeStr": "(start what are (measure 3 loc) on (temEx for new object 0 that maximize objectquality 0 ratio in placename 0))",
+		"cctrans": {
+			"types": [],
+			"temporalEx": [],
+			"transformation": []
+		}
+	},
+	{
+		"question": "What are the three locations for new stores that maximize market share in Utrecht",
+		"cleaned_Question": "What are 3 locations for new stores that maximize market share in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"object": [
+			"stores"
+		],
+		"objectquality": [
+			"market share"
+		],
+		"ner_Question": "what are 3 locations for new object0 that maximize objectquality0 ratio in placename0",
+		"parseTreeStr": "(start what are (measure 3 loc) on (temEx for new object 0 that maximize objectquality 0 ratio in placename 0))",
+		"cctrans": {
+			"types": [],
+			"temporalEx": [],
+			"transformation": []
+		}
+	},
+	{
+		"question": "Which fire station is the closest to each school in Utrecht",
+		"cleaned_Question": "Which fire station is closest to each school in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"object": [
+			"fire station",
+			"school"
+		],
+		"ner_Question": "which object0 is closest to each object1 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) is (condition (distanceR closest to) each (coreC object 1)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "school"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "fire station"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the two fire stations closest to each school in Utrecht",
+		"cleaned_Question": "What are 2 fire stations closest to each school in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"object": [
+			"fire stations",
+			"school"
+		],
+		"ner_Question": "what are 2 object0 closest to each object1 in placename0",
+		"parseTreeStr": "(start what are (measure 2 (coreC object 0)) (condition (distanceR closest to) each (coreC object 1)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "school"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "fire stations"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of people between 15 and 19 years old within 1.5 miles of library branches in Palm city",
+		"cleaned_Question": "What is number of people between 15 and 19 years old within 1.5 miles of library branches in Palm city",
+		"placename": [
+			"Palm city"
+		],
+		"quantity": [
+			"1.5 miles"
+		],
+		"date": [
+			"between 15 and 19 years old"
+		],
+		"object": [
+			"people",
+			"library branches"
+		],
+		"conamount": [
+			"number"
+		],
+		"ner_Question": "what is conamount0 count of object0 edate0 within equantity0 of object1 in placename0",
+		"parseTreeStr": "(start what is (measure (coreC conamount 0 count) of (coreC object 0)) (condition (date edate 0)) (condition (topoR within) (distField (quantity equantity 0) of (coreC object 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "library branches"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "people"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "3",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"Palm city"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				},
+				{
+					"before": [
+						"2_u"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of asian people within 1.5 miles of library branches in Palm city",
+		"cleaned_Question": "What is number of asian people within 1.5 miles of library branches in Palm city",
+		"placename": [
+			"Palm city"
+		],
+		"quantity": [
+			"1.5 miles"
+		],
+		"object": [
+			"asian people",
+			"library branches"
+		],
+		"conamount": [
+			"number"
+		],
+		"ner_Question": "what is conamount0 count of object0 within equantity0 of object1 in placename0",
+		"parseTreeStr": "(start what is (measure (coreC conamount 0 count) of (coreC object 0)) (condition (topoR within) (distField (quantity equantity 0) of (coreC object 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "library branches"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "asian people"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "3",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"Palm city"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				},
+				{
+					"before": [
+						"2_u"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the median household income within 1.5 miles of library branches in Palm city",
+		"cleaned_Question": "What are median household income within 1.5 miles of library branches in Palm city",
+		"placename": [
+			"Palm city"
+		],
+		"quantity": [
+			"1.5 miles"
+		],
+		"object": [
+			"library branches"
+		],
+		"objconamount": [
+			"household income"
+		],
+		"ner_Question": "what are median objconamount0 era within equantity0 of object0 in placename0",
+		"parseTreeStr": "(start what are (measure (aggre median) (coreC objconamount 0 era)) (condition (topoR within) (distField (quantity equantity 0) of (coreC object 0))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "library branches"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"objconamount"
+					],
+					"id": "2",
+					"keyword": "household income",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "3",
+					"keyword": "median"
+				}
+			],
+			"extent": [
+				"Palm city"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within four minutes of a fire station at 5 pm on Friday in Utrecht",
+		"cleaned_Question": "What areas are within 4 minutes of fire station at 5 pm on Friday in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"time": [
+			"4 minutes",
+			"5 pm"
+		],
+		"date": [
+			"Friday"
+		],
+		"object": [
+			"fire station"
+		],
+		"ner_Question": "what areas are within etime0 of object0 at etime1 on edate0 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (serviceObj (time etime 0) of (origin (objectC object 0)))) on (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire station"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "2",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "3",
+					"keyword": ""
+				}
+			],
+			"temporalEx": [
+				"Friday"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"2"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the areas within a four-minute drive of each fire station at 2 a.m. on Tuesday in Utrecht",
+		"cleaned_Question": "What are areas within 4 minute drive of each fire station at 2 a.m. on Tuesday in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"time": [
+			"4 minute",
+			"2 a.m."
+		],
+		"date": [
+			"Tuesday"
+		],
+		"object": [
+			"fire station"
+		],
+		"ner_Question": "what are areas within etime0 drive of each object0 at etime1 on edate0 in placename0",
+		"parseTreeStr": "(start what are area within etime 0 of each object 0 on edate 0 in placename 0)"
+	},
+	{
+		"question": "What areas are within 6 minute, 8 minute, 10 minute and 12 minute of driving time from fire stations in Utrecht",
+		"cleaned_Question": "What areas are within 6 minute , 8 minute , 10 minute and 12 minute of driving time from fire stations in Utrecht",
+		"placename": [
+			"Utrecht"
+		],
+		"time": [
+			"6 minute ,",
+			"8 minute",
+			"10 minute and 12 minute"
+		],
+		"object": [
+			"fire stations"
+		],
+		"network": [
+			"driving time"
+		],
+		"ner_Question": "what areas are within etime0 etime1 , etime2 of network0 from object0 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (serviceObj (time etime 0) (time etime 1) (time etime 2) of (networkC network 0) from (origin (objectC object 0)))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "driving time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "4",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "How many streetlights for each district in San Diego",
+		"cleaned_Question": "How many streetlights for each district in San Diego",
+		"placename": [
+			"San Diego"
+		],
+		"object": [
+			"streetlights",
+			"district"
+		],
+		"ner_Question": "how many object0 for each object1 in placename0",
+		"parseTreeStr": "(start (measure (conAm how many) (coreC object 0)) for each (support (coreC object 1)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "district"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "streetlights"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"San Diego"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the total length of bike routes for each district in San Diego",
+		"cleaned_Question": "What is total length of bike routes for each district in San Diego",
+		"placename": [
+			"San Diego"
+		],
+		"object": [
+			"bike routes",
+			"district"
+		],
+		"covamount": [
+			"length"
+		],
+		"ner_Question": "what is total covamount0 era of object0 for each object1 in placename0",
+		"parseTreeStr": "(start what is (measure (aggre total) (coreC covamount 0 era) of (coreC object 0)) for each (support (coreC object 1)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "district"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "bike routes"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "2",
+					"keyword": "length",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "3",
+					"keyword": "total"
+				}
+			],
+			"extent": [
+				"San Diego"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"0"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which districts have more than 165 streetlights and less than 250 streetlights in San Diego",
+		"cleaned_Question": "Which districts have more than 165 streetlights and less than 250 streetlights in San Diego",
+		"placename": [
+			"San Diego"
+		],
+		"object": [
+			"districts",
+			"streetlights"
+		],
+		"ner_Question": "which object0 have more than 165 object1 and less than 250 object1 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) (condition (boolR have)) (condition (compareR more than) 165 (coreC object 1)) and (condition (compareR less than) 250 (coreC object 1)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "streetlights"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "streetlights"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "districts"
+				}
+			],
+			"extent": [
+				"San Diego"
+			],
+			"transformation": [
+				{
+					"before": [
+						"2",
+						"0"
+					],
+					"after": [
+						"2_u"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u_u"
+					]
+				},
+				{
+					"before": [
+						"2_u",
+						"2_u_u"
+					],
+					"after": [
+						"2_u_u_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which districts have bicycle routes more than 2.3 miles and less than 3.9 miles in San Diego",
+		"cleaned_Question": "Which districts have bicycle routes more than 2.3 miles and less than 3.9 miles in San Diego",
+		"placename": [
+			"San Diego"
+		],
+		"quantity": [
+			"2.3 miles",
+			"3.9 miles"
+		],
+		"object": [
+			"districts",
+			"bicycle routes"
+		],
+		"ner_Question": "which object0 have object1 more than equantity0 and less than equantity1 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) (condition (boolR have) (coreC object 1) (compareR more than) (quantity equantity 0)) and (condition (compareR less than) (quantity equantity 1)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "bicycle routes"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "districts"
+				}
+			],
+			"extent": [
+				"San Diego"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What liquor stores are within 1000 foot of schools, libraries, and parks in El Cajon",
+		"cleaned_Question": "What liquor stores are within 1000 foot of schools , libraries , and parks in El Cajon",
+		"placename": [
+			"El Cajon"
+		],
+		"quantity": [
+			"1000 foot"
+		],
+		"object": [
+			"liquor stores",
+			"schools",
+			"libraries",
+			"parks"
+		],
+		"ner_Question": "what object0 are within equantity0 of object1 , object2 , and object3 in placename0",
+		"parseTreeStr": "(start what (measure (coreC object 0)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 1) (coreC object 2) and (coreC object 3))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "parks"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "libraries"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "schools"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "3",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "liquor stores"
+				}
+			],
+			"extent": [
+				"El Cajon"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"3"
+					],
+					"after": [
+						"4_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What liquor stores are within 1000 foot of schools in El Cajon",
+		"cleaned_Question": "What liquor stores are within 1000 foot of schools in El Cajon",
+		"placename": [
+			"El Cajon"
+		],
+		"quantity": [
+			"1000 foot"
+		],
+		"object": [
+			"liquor stores",
+			"schools"
+		],
+		"ner_Question": "what object0 are within equantity0 of object1 in placename0",
+		"parseTreeStr": "(start what (measure (coreC object 0)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "schools"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "liquor stores"
+				}
+			],
+			"extent": [
+				"El Cajon"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What liquor stores are within 1000 foot of libraries in El Cajon",
+		"cleaned_Question": "What liquor stores are within 1000 foot of libraries in El Cajon",
+		"placename": [
+			"El Cajon"
+		],
+		"quantity": [
+			"1000 foot"
+		],
+		"object": [
+			"liquor stores",
+			"libraries"
+		],
+		"ner_Question": "what object0 are within equantity0 of object1 in placename0",
+		"parseTreeStr": "(start what (measure (coreC object 0)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "libraries"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "liquor stores"
+				}
+			],
+			"extent": [
+				"El Cajon"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What liquor stores are within 1000 foot of parks in El Cajon",
+		"cleaned_Question": "What liquor stores are within 1000 foot of parks in El Cajon",
+		"placename": [
+			"El Cajon"
+		],
+		"quantity": [
+			"1000 foot"
+		],
+		"object": [
+			"liquor stores",
+			"parks"
+		],
+		"ner_Question": "what object0 are within equantity0 of object1 in placename0",
+		"parseTreeStr": "(start what (measure (coreC object 0)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "parks"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "liquor stores"
+				}
+			],
+			"extent": [
+				"El Cajon"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are inside 1000 foot of schools in El Cajon",
+		"cleaned_Question": "What areas are inside 1000 foot of schools in El Cajon",
+		"placename": [
+			"El Cajon"
+		],
+		"quantity": [
+			"1000 foot"
+		],
+		"object": [
+			"schools"
+		],
+		"ner_Question": "what areas are inside equantity0 of object0 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR inside) (distField (quantity equantity 0) of (coreC object 0))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "schools"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"El Cajon"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which college district has the fewest households with an annual income less than 30000 dollars in the United States of America",
+		"cleaned_Question": "Which college district has fewest households with annual income less than 30000 dollars in United States of America",
+		"placename": [
+			"United States of America"
+		],
+		"object": [
+			"college district",
+			"households"
+		],
+		"objconamount": [
+			"annual income"
+		],
+		"ner_Question": "which object0 has fewest object1 with objconamount0 era less than 30000 dollars in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) (condition (boolR has) (extremaR fewest) (coreC object 1)) with (subcon (coreC objconamount 0 era) (compareR less than) (quantity 30000)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objconamount"
+					],
+					"id": "0",
+					"keyword": "annual income",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "households"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "college district"
+				}
+			],
+			"extent": [
+				"United States of America"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1_u"
+					],
+					"after": [
+						"2_u_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which wind farm proposals are not intersect with the wild lands in Scotland",
+		"cleaned_Question": "Which wind farm proposals are not intersect with wild lands in Scotland",
+		"placename": [
+			"Scotland"
+		],
+		"object": [
+			"wild lands",
+			"wind farm proposals"
+		],
+		"ner_Question": "which object1 are not intersect with object0 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 1)) are (false not) (condition (topoR intersect with) (coreC object 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "wild lands"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "wind farm proposals"
+				}
+			],
+			"extent": [
+				"Scotland"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are visible from the wild lands in Scotland",
+		"cleaned_Question": "What areas are visible from wild lands in Scotland",
+		"placename": [
+			"Scotland"
+		],
+		"object": [
+			"wild lands"
+		],
+		"ner_Question": "what areas are visible from object0 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (boolR visible from) (coreC object 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "wild lands"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Scotland"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which wind farm proposals are nearest to the roads in Scotland",
+		"cleaned_Question": "Which wind farm proposals are nearest to roads in Scotland",
+		"placename": [
+			"Scotland"
+		],
+		"object": [
+			"wind farm proposals",
+			"roads"
+		],
+		"ner_Question": "which object0 are nearest to object1 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are (condition (distanceR nearest to) (coreC object 1)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "roads"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "wind farm proposals"
+				}
+			],
+			"extent": [
+				"Scotland"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within a quarter mile of a store or restaurant, light rail stop, and planned commercial district in Gresham",
+		"cleaned_Question": "What areas are within quarter mile of store or restaurant , light rail stop , and planned commercial district in Gresham",
+		"placename": [
+			"Gresham"
+		],
+		"quantity": [
+			"quarter mile"
+		],
+		"object": [
+			"store",
+			"restaurant",
+			"light rail stop",
+			"planned commercial district"
+		],
+		"ner_Question": "what areas are within equantity0 of object0 or object1 , object2 , and object3 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 0) or (coreC object 1) (coreC object 2) and (coreC object 3))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "planned commercial district"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "light rail stop"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "restaurant"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "3",
+					"keyword": "store"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "4",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "5",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				},
+				{
+					"before": [
+						"3"
+					],
+					"after": [
+						"4"
+					]
+				},
+				{
+					"before": [
+						"4"
+					],
+					"after": [
+						"5"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within a quarter mile of a store in Gresham",
+		"cleaned_Question": "What areas are within quarter mile of store in Gresham",
+		"placename": [
+			"Gresham"
+		],
+		"quantity": [
+			"quarter mile"
+		],
+		"object": [
+			"store"
+		],
+		"ner_Question": "what areas are within equantity0 of object0 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 0))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "store"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within a quarter mile of a restaurant in Gresham",
+		"cleaned_Question": "What areas are within quarter mile of restaurant in Gresham",
+		"placename": [
+			"Gresham"
+		],
+		"quantity": [
+			"quarter mile"
+		],
+		"object": [
+			"restaurant"
+		],
+		"ner_Question": "what areas are within equantity0 of object0 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 0))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "restaurant"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within a quarter mile of light rail stop in Gresham",
+		"cleaned_Question": "What areas are within quarter mile of light rail stop in Gresham",
+		"placename": [
+			"Gresham"
+		],
+		"quantity": [
+			"quarter mile"
+		],
+		"object": [
+			"light rail stop"
+		],
+		"ner_Question": "what areas are within equantity0 of object0 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 0))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "light rail stop"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within a quarter mile of planned commercial district in Gresham",
+		"cleaned_Question": "What areas are within quarter mile of planned commercial district in Gresham",
+		"placename": [
+			"Gresham"
+		],
+		"quantity": [
+			"quarter mile"
+		],
+		"object": [
+			"planned commercial district"
+		],
+		"ner_Question": "what areas are within equantity0 of object0 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 0))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "planned commercial district"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which gas stations are in Gresham",
+		"cleaned_Question": "Which gas stations are in Gresham",
+		"placename": [
+			"Gresham"
+		],
+		"object": [
+			"gas stations"
+		],
+		"ner_Question": "which object0 are in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "gas stations"
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the area of currently mixed use zones in Gresham",
+		"cleaned_Question": "What is area of currently mixed use zones in Gresham",
+		"placename": [
+			"Gresham"
+		],
+		"field": [
+			"currently mixed use zones"
+		],
+		"covamount": [
+			"area"
+		],
+		"ner_Question": "what is covamount0 era of field0 nominal in placename0",
+		"parseTreeStr": "(start what is (measure (coreC covamount 0 era) of (coreC field 0 nominal)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "currently mixed use zones",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "area",
+					"measureLevel": "era"
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of tornadoes for each state in the United States of America from 1950 to 2011",
+		"cleaned_Question": "What is number of tornadoes for each state in United States of America from 1950 to 2011",
+		"placename": [
+			"United States of America"
+		],
+		"date": [
+			"from 1950 to 2011"
+		],
+		"object": [
+			"state"
+		],
+		"event": [
+			"tornadoes"
+		],
+		"conamount": [
+			"number"
+		],
+		"ner_Question": "what is conamount0 count of event0 for each object0 in placename0 edate0",
+		"parseTreeStr": "(start what is (measure (coreC conamount 0 count) of (coreC event 0)) for each (support (coreC object 0)) in (extent placename 0) (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "state"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "tornadoes"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"United States of America"
+			],
+			"temporalEx": [
+				"from 1950 to 2011"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which county has the highest Fujita damage scale in the United States of America from 1950 to 2011",
+		"cleaned_Question": "Which county has highest Fujita damage scale in United States of America from 1950 to 2011",
+		"placename": [
+			"United States of America"
+		],
+		"date": [
+			"from 1950 to 2011"
+		],
+		"object": [
+			"county"
+		],
+		"objectquality": [
+			"fujita damage scale"
+		],
+		"ner_Question": "which object0 has highest objectquality0 ratio in placename0 edate0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) (condition (boolR has) (extremaR highest) (coreC objectquality 0 ratio)) in (extent placename 0) (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objectquality"
+					],
+					"id": "0",
+					"keyword": "fujita damage scale",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "county"
+				}
+			],
+			"extent": [
+				"United States of America"
+			],
+			"temporalEx": [
+				"from 1950 to 2011"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the mean directions of tornadoes for each county in the United States of America from 1950 to 2011",
+		"cleaned_Question": "What are mean directions of tornadoes for each county in United States of America from 1950 to 2011",
+		"placename": [
+			"United States of America"
+		],
+		"date": [
+			"from 1950 to 2011"
+		],
+		"object": [
+			"county"
+		],
+		"event": [
+			"tornadoes"
+		],
+		"covamount": [
+			"mean directions"
+		],
+		"ner_Question": "what are covamount0 loc of event0 for each object0 in placename0 edate0",
+		"parseTreeStr": "(start what are (measure (coreC covamount 0 loc) of (coreC event 0)) for each (support (coreC object 0)) in (extent placename 0) (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "county"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "tornadoes"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "2",
+					"keyword": "mean directions",
+					"measureLevel": "loc"
+				}
+			],
+			"extent": [
+				"United States of America"
+			],
+			"temporalEx": [
+				"from 1950 to 2011"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the risk index of new homelessness for each census tract in Los Angeles",
+		"cleaned_Question": "What are risk index of new homelessness for each census tract in Los Angeles",
+		"placename": [
+			"Los Angeles"
+		],
+		"object": [
+			"census tract"
+		],
+		"event": [
+			"homelessness"
+		],
+		"eventquality": [
+			"risk index"
+		],
+		"ner_Question": "what are eventquality0 ratio of new event0 for each object0 in placename0",
+		"parseTreeStr": "(start what are (measure (coreC eventquality 0 ratio) of new (coreC event 0)) for each (support (coreC object 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "census tract"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "homelessness"
+				},
+				{
+					"type": [
+						"eventquality"
+					],
+					"id": "2",
+					"keyword": "risk index",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Los Angeles"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which census tracts have more than 200 unemployed people over 16 years old in Los Angeles",
+		"cleaned_Question": "Which census tracts have more than 200 unemployed people over 16 years old in Los Angeles",
+		"placename": [
+			"Los Angeles"
+		],
+		"date": [
+			"over 16 years old"
+		],
+		"object": [
+			"census tracts",
+			"unemployed people"
+		],
+		"ner_Question": "which object0 have more than 200 object1 edate0 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) (condition (boolR have)) (condition (compareR more than) 200 (coreC object 1)) (condition (date edate 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "unemployed people"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "census tracts"
+				}
+			],
+			"extent": [
+				"Los Angeles"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where is the hot spot of homeless population density for each 20000 feet distance band in Los Angeles",
+		"cleaned_Question": "Where is hot spot of homeless population density for each 20000 feet distance band in Los Angeles",
+		"placename": [
+			"Los Angeles"
+		],
+		"quantity": [
+			"20000 feet"
+		],
+		"covamount": [
+			"hot spot"
+		],
+		"objconobjcovpro": [
+			"homeless population density"
+		],
+		"ner_Question": "where is covamount0 loc of objconobjcovpro0 ira for each equantity0 distance band in placename0",
+		"parseTreeStr": "(start (measure (location where is (coreC covamount 0 loc) of (coreC objconobjcovpro 0 ira))) for each (support (distBand (quantity equantity 0) distance band)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"distanceBand"
+					],
+					"id": "0",
+					"keyword": "20000 feet distance band"
+				},
+				{
+					"type": [
+						"objconobjcovpro"
+					],
+					"id": "1",
+					"keyword": "homeless population density",
+					"measureLevel": "ira"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "2",
+					"keyword": "hot spot",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "3",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Los Angeles"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which vacant lots are larger than 20 acres, within 1 mile of a freeway, and outside the flood zone in Hillsboro",
+		"cleaned_Question": "Which vacant lots are larger than 20 acres , within 1 mile of freeway , and outside flood zone in Hillsboro",
+		"placename": [
+			"Hillsboro"
+		],
+		"quantity": [
+			"20 acres",
+			"1 mile"
+		],
+		"field": [
+			"vacant lots",
+			"flood zone"
+		],
+		"object": [
+			"freeway"
+		],
+		"ner_Question": "which field0 nominal are larger than equantity0 , within equantity1 of object0 , and outside field1 nominal in placename0",
+		"parseTreeStr": "(start which (measure (coreC field 0 nominal)) are (condition (compareR larger than) (quantity equantity 0)) (condition (topoR within) (distField (quantity equantity 1) of (coreC object 0) and)) (condition (topoR outside) (coreC field 1 nominal)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "flood zone",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "freeway"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "3",
+					"keyword": "vacant lots",
+					"measureLevel": "nominal"
+				}
+			],
+			"extent": [
+				"Hillsboro"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"0"
+					],
+					"after": [
+						"3_u"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"2"
+					],
+					"after": [
+						"3_u_u"
+					]
+				},
+				{
+					"before": [
+						"3_u",
+						"3_u_u"
+					],
+					"after": [
+						"3_u_u_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which vacant lots are larger than 20 acres in Hillsboro",
+		"cleaned_Question": "Which vacant lots are larger than 20 acres in Hillsboro",
+		"placename": [
+			"Hillsboro"
+		],
+		"quantity": [
+			"20 acres"
+		],
+		"field": [
+			"vacant lots"
+		],
+		"ner_Question": "which field0 nominal are larger than equantity0 in placename0",
+		"parseTreeStr": "(start which (measure (coreC field 0 nominal)) are (condition (compareR larger than) (quantity equantity 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "vacant lots",
+					"measureLevel": "nominal"
+				}
+			],
+			"extent": [
+				"Hillsboro"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which vacant lots are within 1 mile of a freeway in Hillsboro",
+		"cleaned_Question": "Which vacant lots are within 1 mile of freeway in Hillsboro",
+		"placename": [
+			"Hillsboro"
+		],
+		"quantity": [
+			"1 mile"
+		],
+		"field": [
+			"vacant lots"
+		],
+		"object": [
+			"freeway"
+		],
+		"ner_Question": "which field0 nominal are within equantity0 of object0 in placename0",
+		"parseTreeStr": "(start which (measure (coreC field 0 nominal)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 0))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "freeway"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "2",
+					"keyword": "vacant lots",
+					"measureLevel": "nominal"
+				}
+			],
+			"extent": [
+				"Hillsboro"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which vacant lots are outside the flood zone in Hillsboro",
+		"cleaned_Question": "Which vacant lots are outside flood zone in Hillsboro",
+		"placename": [
+			"Hillsboro"
+		],
+		"field": [
+			"vacant lots",
+			"flood zone"
+		],
+		"ner_Question": "which field0 nominal are outside field1 nominal in placename0",
+		"parseTreeStr": "(start which (measure (coreC field 0 nominal)) are (condition (topoR outside) (coreC field 1 nominal)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "flood zone",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "vacant lots",
+					"measureLevel": "nominal"
+				}
+			],
+			"extent": [
+				"Hillsboro"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the average cost per acre for each potential sites in Hillsboro",
+		"cleaned_Question": "What is average cost per acre for each potential sites in Hillsboro",
+		"placename": [
+			"Hillsboro"
+		],
+		"object": [
+			"potential sites"
+		],
+		"objconobjcovpro": [
+			"average cost per acre"
+		],
+		"ner_Question": "what is objconobjcovpro0 ira for each object0 in placename0",
+		"parseTreeStr": "(start what is (measure (coreC objconobjcovpro 0 ira)) for each (support (coreC object 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "potential sites"
+				},
+				{
+					"type": [
+						"objconobjcovpro"
+					],
+					"id": "1",
+					"keyword": "average cost per acre",
+					"measureLevel": "ira"
+				}
+			],
+			"extent": [
+				"Hillsboro"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are the private lands in Crook county, Deschutes county, and Jefferson county",
+		"cleaned_Question": "Where are private lands in Crook county , Deschutes county , and Jefferson county",
+		"placename": [
+			"Crook county",
+			"Deschutes county",
+			"Jefferson county"
+		],
+		"field": [
+			"private lands"
+		],
+		"ner_Question": "where are field0 nominal in placename0 , placename1 , and placename2",
+		"parseTreeStr": "(start (measure (location where are (coreC field 0 nominal))) in (extent placename 0) (extent placename 1) and (extent placename 2))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "private lands",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Crook county",
+				"Deschutes county",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the Euclidean distance to the rivers in Crook, Deschutes, and Jefferson county",
+		"cleaned_Question": "What is Euclidean distance to rivers in Crook , Deschutes , and Jefferson county",
+		"placename": [
+			"Crook",
+			"Deschutes",
+			"Jefferson county"
+		],
+		"field": [
+			"euclidean distance"
+		],
+		"object": [
+			"rivers"
+		],
+		"ner_Question": "what is field0 ratio to object0 in placename0 , placename1 , and placename2",
+		"parseTreeStr": "(start what is (measure (coreC field 0 ratio) to (coreC object 0)) in (extent placename 0) (extent placename 1) and (extent placename 2))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "rivers"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "euclidean distance",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Crook",
+				"Deschutes",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which airports are within 50 mile of Crook, Deschutes and Jefferson county",
+		"cleaned_Question": "Which airports are within 50 mile of Crook , Deschutes and Jefferson county",
+		"placename": [
+			"Crook",
+			"Deschutes",
+			"Jefferson county"
+		],
+		"quantity": [
+			"50 mile"
+		],
+		"object": [
+			"airports"
+		],
+		"ner_Question": "which object0 are within equantity0 of placename0 , placename1 and placename2",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are (condition (topoR within) (serviceObj (quantity equantity 0) of)) (extent placename 0) (extent placename 1) and (extent placename 2))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "0",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "1",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "airports"
+				}
+			],
+			"extent": [
+				"Crook",
+				"Deschutes",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"2",
+						"0"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within 60 minutes of airports in Crook, Deschutes, and Jefferson county",
+		"cleaned_Question": "What areas are within 60 minutes of airports in Crook , Deschutes , and Jefferson county",
+		"placename": [
+			"Crook",
+			"Deschutes",
+			"Jefferson county"
+		],
+		"time": [
+			"60 minutes"
+		],
+		"object": [
+			"airports"
+		],
+		"ner_Question": "what areas are within etime0 of object0 in placename0 , placename1 , and placename2",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (serviceObj (time etime 0) of (origin (objectC object 0)))) in (extent placename 0) (extent placename 1) and (extent placename 2))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "airports"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "2",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "3",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Crook",
+				"Deschutes",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"2"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which peaks are greater than or equal to 2000 meters and within 40 miles of the countries borders in Crook, Deschutes, and Jefferson county",
+		"cleaned_Question": "Which peaks are greater than or equal to 2000 meters and within 40 miles of countries borders in Crook , Deschutes , and Jefferson county",
+		"placename": [
+			"Crook",
+			"Deschutes",
+			"Jefferson county"
+		],
+		"quantity": [
+			"2000 meters",
+			"40 miles"
+		],
+		"object": [
+			"peaks",
+			"countries borders"
+		],
+		"ner_Question": "which object0 are greater than or equal to equantity0 and within equantity1 of object1 in placename0 , placename1 , and placename2",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are (condition (compareR greater than or equal to) (quantity equantity 0)) and (condition (topoR within) (distField (quantity equantity 1) of (coreC object 1))) in (extent placename 0) (extent placename 1) and (extent placename 2))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "countries borders"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "peaks"
+				}
+			],
+			"extent": [
+				"Crook",
+				"Deschutes",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are visible from peaks in Crook, Deschutes, and Jefferson county",
+		"cleaned_Question": "What areas are visible from peaks in Crook , Deschutes , and Jefferson county",
+		"placename": [
+			"Crook",
+			"Deschutes",
+			"Jefferson county"
+		],
+		"object": [
+			"peaks"
+		],
+		"ner_Question": "what areas are visible from object0 in placename0 , placename1 , and placename2",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (boolR visible from) (coreC object 0)) in (extent placename 0) (extent placename 1) and (extent placename 2))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "peaks"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Crook",
+				"Deschutes",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the average euclidean distance to rivers for each standard deviational ellipses of golf courses in Crook, Deschutes, and Jefferson county",
+		"cleaned_Question": "What is average euclidean distance to rivers for each standard deviational ellipses of golf courses in Crook , Deschutes , and Jefferson county",
+		"placename": [
+			"Crook",
+			"Deschutes",
+			"Jefferson county"
+		],
+		"field": [
+			"euclidean distance"
+		],
+		"object": [
+			"rivers",
+			"golf courses"
+		],
+		"covamount": [
+			"standard deviational ellipses"
+		],
+		"ner_Question": "what is average field0 ratio to object0 for each covamount0 loc of object1 in placename0 , placename1 , and placename2",
+		"parseTreeStr": "(start what is (measure (aggre average) (coreC field 0 ratio) to (coreC object 0)) for each (support (coreC covamount 0 loc) of (coreC object 1)) in (extent placename 0) (extent placename 1) and (extent placename 2))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "golf courses"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "standard deviational ellipses",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "rivers"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "3",
+					"keyword": "euclidean distance",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "4",
+					"keyword": "average"
+				}
+			],
+			"extent": [
+				"Crook",
+				"Deschutes",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"1"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which parcels have an average slope of less than 10 percent in Poway",
+		"cleaned_Question": "Which parcels have average slope of less than 10 percent in Poway",
+		"placename": [
+			"Poway"
+		],
+		"percent": [
+			"10 percent"
+		],
+		"field": [
+			"slope"
+		],
+		"object": [
+			"parcels"
+		],
+		"ner_Question": "which object0 have average field0 ratio of less than epercent0 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) (condition (boolR have) (aggre average) (coreC field 0 ratio) of (compareR less than) (quantity epercent 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "slope",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "1",
+					"keyword": "average"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "parcels"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which parcels are within 1500 feet of the major road in Poway",
+		"cleaned_Question": "Which parcels are within 1500 feet of major road in Poway",
+		"placename": [
+			"Poway"
+		],
+		"quantity": [
+			"1500 feet"
+		],
+		"object": [
+			"parcels",
+			"major road"
+		],
+		"ner_Question": "which object0 are within equantity0 of object1 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "major road"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "parcels"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which census blocks are within a four-minute travel time from fire stations in Poway",
+		"cleaned_Question": "Which census blocks are within 4 minute travel time from fire stations in Poway",
+		"placename": [
+			"Poway"
+		],
+		"time": [
+			"4 minute"
+		],
+		"object": [
+			"census blocks",
+			"fire stations"
+		],
+		"network": [
+			"travel time"
+		],
+		"ner_Question": "which object0 are within etime0 network0 from object1 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are (condition (topoR within) (serviceObj (time etime 0) (networkC network 0) from (origin (objectC object 1)))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "travel time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "census blocks"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"2"
+					],
+					"after": [
+						"4_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the percentage of census blocks within 4 minute travel time from fire stations in Poway",
+		"cleaned_Question": "What is percentage of census blocks within 4 minute travel time from fire stations in Poway",
+		"placename": [
+			"Poway"
+		],
+		"time": [
+			"4 minute"
+		],
+		"object": [
+			"census blocks",
+			"fire stations"
+		],
+		"network": [
+			"travel time"
+		],
+		"proportion": [
+			"percentage"
+		],
+		"ner_Question": "what is proportion0 ira of object0 within etime0 network0 from object1 in placename0",
+		"parseTreeStr": "(start what is (measure (coreC proportion 0 ira) of (coreC object 0)) (condition (topoR within) (serviceObj (time etime 0) (networkC network 0) from (origin (objectC object 1)))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "travel time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "census blocks"
+				},
+				{
+					"type": [
+						"proportion"
+					],
+					"id": "5",
+					"keyword": "percentage",
+					"measureLevel": "ira"
+				},
+				{
+					"type": [
+						"amount"
+					],
+					"id": "6",
+					"keyword": "",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"amount"
+					],
+					"id": "7",
+					"keyword": "",
+					"measureLevel": "era"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"4"
+					],
+					"after": [
+						"4_u"
+					]
+				},
+				{
+					"before": [
+						"4_u"
+					],
+					"after": [
+						"6"
+					]
+				},
+				{
+					"before": [
+						"4"
+					],
+					"after": [
+						"7"
+					]
+				},
+				{
+					"before": [
+						"6",
+						"7"
+					],
+					"after": [
+						"5"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the total population within a four-minute travel time from fire stations in Poway",
+		"cleaned_Question": "What is total population within 4 minute travel time from fire stations in Poway",
+		"placename": [
+			"Poway"
+		],
+		"time": [
+			"4 minute"
+		],
+		"object": [
+			"fire stations"
+		],
+		"network": [
+			"travel time"
+		],
+		"objconamount": [
+			"total population"
+		],
+		"ner_Question": "what is objconamount0 count within etime0 network0 from object0 in placename0",
+		"parseTreeStr": "(start what is (measure (coreC objconamount 0 count)) (condition (topoR within) (serviceObj (time etime 0) (networkC network 0) from (origin (objectC object 0)))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "travel time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"objconamount"
+					],
+					"id": "4",
+					"keyword": "total population",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"2"
+					],
+					"after": [
+						"4_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the total property values within a four-minute travel time from fire stations in Poway",
+		"cleaned_Question": "What is total property values within 4 minute travel time from fire stations in Poway",
+		"placename": [
+			"Poway"
+		],
+		"time": [
+			"4 minute"
+		],
+		"object": [
+			"fire stations"
+		],
+		"network": [
+			"travel time"
+		],
+		"conamount": [
+			"property values"
+		],
+		"ner_Question": "what is total conamount0 era within etime0 network0 from object0 in placename0",
+		"parseTreeStr": "(start what is (measure (aggre total) (coreC conamount 0 era)) (condition (topoR within) (serviceObj (time etime 0) (networkC network 0) from (origin (objectC object 0)))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "travel time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "4",
+					"keyword": "property values",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "5",
+					"keyword": "total"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"2"
+					],
+					"after": [
+						"5"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the total miles of streets within four minutes of fire stations in Poway",
+		"cleaned_Question": "What is total miles of streets within 4 minutes of fire stations in Poway",
+		"placename": [
+			"Poway"
+		],
+		"time": [
+			"4 minutes"
+		],
+		"object": [
+			"fire stations",
+			"streets"
+		],
+		"covamount": [
+			"total miles"
+		],
+		"ner_Question": "what is covamount0 era of object1 within etime0 of object0 in placename0",
+		"parseTreeStr": "(start what is (measure (coreC covamount 0 era) of (coreC object 1)) (condition (topoR within) (serviceObj (time etime 0) of (origin (objectC object 0)))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "2",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "3",
+					"keyword": "streets"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "4",
+					"keyword": "total miles",
+					"measureLevel": "era"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"2"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"1"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the cluster for the people over 55 years old in USA in 2019",
+		"cleaned_Question": "What is cluster for people over 55 years old in USA in 2019",
+		"placename": [
+			"USA"
+		],
+		"date": [
+			"over 55 years old",
+			"2019"
+		],
+		"object": [
+			"people"
+		],
+		"covamount": [
+			"cluster"
+		],
+		"ner_Question": "what is covamount0 loc for object0 edate0 in placename0 in edate1",
+		"parseTreeStr": "(start what is (measure (coreC covamount 0 loc) for (coreC object 0)) (condition (date edate 0)) in (extent placename 0) in (temEx edate 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "people"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "cluster",
+					"measureLevel": "loc"
+				}
+			],
+			"extent": [
+				"USA"
+			],
+			"temporalEx": [
+				"2019"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the hot spot of house vacancy rate in USA in 2019",
+		"cleaned_Question": "What is hot spot of house vacancy rate in USA in 2019",
+		"placename": [
+			"USA"
+		],
+		"date": [
+			"2019"
+		],
+		"covamount": [
+			"hot spot"
+		],
+		"objconobjconpro": [
+			"house vacancy rate"
+		],
+		"ner_Question": "what is covamount0 loc of objconobjconpro0 ira in placename0 in edate0",
+		"parseTreeStr": "(start what is (measure (coreC covamount 0 loc) of (coreC objconobjconpro 0 ira)) in (extent placename 0) in (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objconobjconpro"
+					],
+					"id": "0",
+					"keyword": "house vacancy rate",
+					"measureLevel": "ira"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "hot spot",
+					"measureLevel": "loc"
+				}
+			],
+			"extent": [
+				"USA"
+			],
+			"temporalEx": [
+				"2019"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the ratio of population over 55 years old in a zip code area to the total population over 55 years old in USA in 2019",
+		"cleaned_Question": "What is ratio of population over 55 years old in zip code area to total population over 55 years old in USA in 2019",
+		"placename": [
+			"USA"
+		],
+		"date": [
+			"over over 55 years old",
+			"55 years old",
+			"2019"
+		],
+		"object": [
+			"zip code area"
+		],
+		"objconamount": [
+			"total population",
+			"population"
+		],
+		"proportion": [
+			"ratio"
+		],
+		"ner_Question": "what is proportion0 ira of objconamount1 era edate0 in object0 to objconamount0 count edate0 in placename0 in edate2",
+		"parseTreeStr": "(start what is (measure (coreC proportion 0 ira) of (coreC objconamount 1 era)) (condition (date edate 0)) (condition (topoRIn in (coreC object 0))) (measure1 to (coreC objconamount 0 count)) (condition (date edate 0)) in (extent placename 0) in (temEx edate 2))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objconamount"
+					],
+					"id": "0",
+					"keyword": "total population",
+					"measureLevel": "count"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "zip code area"
+				},
+				{
+					"type": [
+						"objconamount"
+					],
+					"id": "2",
+					"keyword": "population",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"proportion"
+					],
+					"id": "3",
+					"keyword": "ratio",
+					"measureLevel": "ira"
+				}
+			],
+			"extent": [
+				"USA"
+			],
+			"temporalEx": [
+				"2019"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"2"
+					],
+					"after": [
+						"2_u"
+					]
+				},
+				{
+					"before": [
+						"2_u",
+						"0"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "At which locations is the number of traffic accidents increasing in Florida between 2010 and 2015",
+		"cleaned_Question": "At which locations is number of traffic accidents increasing in Florida between 2010 and 2015",
+		"placename": [
+			"Florida"
+		],
+		"date": [
+			"between 2010 and 2015"
+		],
+		"event": [
+			"traffic accidents"
+		],
+		"conamount": [
+			"number"
+		],
+		"ner_Question": "at which locations is conamount0 count of event0 increasing in placename0 edate0",
+		"parseTreeStr": "(start loc on is conamount 0 count of event 0 in in in placename 0 edate 0)"
+	},
+	{
+		"question": "At which range of time of the day is the number of car accidents highest between 2010 and 2015 in Florida",
+		"cleaned_Question": "At which range of time of day is number of car accidents highest between 2010 and 2015 in Florida",
+		"placename": [
+			"Florida"
+		],
+		"date": [
+			"between 2010 and 2015"
+		],
+		"conamount": [
+			"number"
+		],
+		"ner_Question": "at which range of time of day is conamount0 count of car accidents highest edate0 in placename0",
+		"parseTreeStr": "(start of of is conamount 0 count of highest edate 0 in placename 0)"
+	},
+	{
+		"question": "Where do the car accidents between 3:00 and 5:00 pm occur in Florida between 2010 and 2015",
+		"cleaned_Question": "Where car accidents between 3:00 and 5:00 pm occur in Florida between 2010 and 2015",
+		"placename": [
+			"Florida"
+		],
+		"time": [
+			"between 3:00 and 5:00 pm"
+		],
+		"date": [
+			"between 2010 and 2015"
+		],
+		"ner_Question": "where car accidents etime0 occur in placename0 edate0",
+		"parseTreeStr": "(start (measure (location where)) (condition (serviceObj (time etime 0))) in (extent placename 0) (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "0",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "1",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Florida"
+			],
+			"temporalEx": [
+				"between 2010 and 2015"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are hot spots of violent crime incidents in Florida in 2019",
+		"cleaned_Question": "Where are hot spots of violent crime incidents in Florida in 2019",
+		"placename": [
+			"Florida"
+		],
+		"date": [
+			"2019"
+		],
+		"event": [
+			"violent crime incidents"
+		],
+		"covamount": [
+			"hot spots"
+		],
+		"ner_Question": "where are covamount0 loc of event0 in placename0 in edate0",
+		"parseTreeStr": "(start (measure (location where are (coreC covamount 0 loc) of (coreC event 0))) in (extent placename 0) in (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "violent crime incidents"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "hot spots",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Florida"
+			],
+			"temporalEx": [
+				"2019"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "At which locations has the number of violent crime incident increased in Florida in 2019",
+		"cleaned_Question": "At which locations has number of violent crime incident increased in Florida in 2019",
+		"placename": [
+			"Florida"
+		],
+		"date": [
+			"2019"
+		],
+		"event": [
+			"violent crime incident"
+		],
+		"conamount": [
+			"number"
+		],
+		"ner_Question": "at which locations has conamount0 count of event0 increased in placename0 in edate0",
+		"parseTreeStr": "(start loc on has conamount 0 count of event 0 in in placename 0 in edate 0)"
+	},
+	{
+		"question": "Where do hot spots of crime incidents overlap with hot spots of unemployment in Florida in 2019",
+		"cleaned_Question": "Where hot spots of crime incidents overlap with hot spots of unemployment in Florida in 2019",
+		"placename": [
+			"Florida"
+		],
+		"date": [
+			"2019"
+		],
+		"event": [
+			"crime incidents",
+			"unemployment"
+		],
+		"covamount": [
+			"hot spots",
+			"hot spots"
+		],
+		"ner_Question": "where covamount0 loc of event0 overlap with covamount0 loc of event1 in placename0 in edate0",
+		"parseTreeStr": "(start (measure (location where (coreC covamount 0 loc) of (coreC event 0))) (condition (topoR overlap with) (coreC covamount 0 loc) of (coreC event 1)) in (extent placename 0) in (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "unemployment"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "hot spots",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "2",
+					"keyword": "crime incidents"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "3",
+					"keyword": "hot spots",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "4",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Florida"
+			],
+			"temporalEx": [
+				"2019"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"3"
+					]
+				},
+				{
+					"before": [
+						"3"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which residential properties are within 1 km of a school in Swellendam",
+		"cleaned_Question": "Which residential properties are within 1 km of school in Swellendam",
+		"placename": [
+			"Swellendam"
+		],
+		"quantity": [
+			"1 km"
+		],
+		"object": [
+			"residential properties",
+			"school"
+		],
+		"ner_Question": "which object0 are within equantity0 of object1 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "school"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "residential properties"
+				}
+			],
+			"extent": [
+				"Swellendam"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which residential properties are larger than 100 square meters in Swellendam",
+		"cleaned_Question": "Which residential properties are larger than 100 square meters in Swellendam",
+		"placename": [
+			"Swellendam"
+		],
+		"quantity": [
+			"100 square meters"
+		],
+		"object": [
+			"residential properties"
+		],
+		"ner_Question": "which object0 are larger than equantity0 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are (condition (compareR larger than) (quantity equantity 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "residential properties"
+				}
+			],
+			"extent": [
+				"Swellendam"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which residential properties are within 50 meters of a main road in Swellendam",
+		"cleaned_Question": "Which residential properties are within 50 meters of main road in Swellendam",
+		"placename": [
+			"Swellendam"
+		],
+		"quantity": [
+			"50 meters"
+		],
+		"object": [
+			"residential properties",
+			"main road"
+		],
+		"ner_Question": "which object0 are within equantity0 of object1 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "main road"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "residential properties"
+				}
+			],
+			"extent": [
+				"Swellendam"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which residential properties are within 500 meters of a restaurant in Swellendam",
+		"cleaned_Question": "Which residential properties are within 500 meters of restaurant in Swellendam",
+		"placename": [
+			"Swellendam"
+		],
+		"quantity": [
+			"500 meters"
+		],
+		"object": [
+			"residential properties",
+			"restaurant"
+		],
+		"ner_Question": "which object0 are within equantity0 of object1 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "restaurant"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "residential properties"
+				}
+			],
+			"extent": [
+				"Swellendam"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within 1000 meters of roads in Assam in India",
+		"cleaned_Question": "What areas are within 1000 meters of roads in Assam in India",
+		"placename": [
+			"Assam",
+			"India"
+		],
+		"quantity": [
+			"1000 meters"
+		],
+		"object": [
+			"roads"
+		],
+		"ner_Question": "what areas are within equantity0 of object0 in placename0 in placename1",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 0))) in (extent placename 0) in (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "roads"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Assam",
+				"India"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are outside 5 km of water bodies in Assam in India",
+		"cleaned_Question": "What areas are outside 5 km of water bodies in Assam in India",
+		"placename": [
+			"Assam",
+			"India"
+		],
+		"quantity": [
+			"5 km"
+		],
+		"field": [
+			"water bodies"
+		],
+		"ner_Question": "what areas are outside equantity0 of field0 nominal in placename0 in placename1",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR outside) (distField (quantity equantity 0) of (coreC field 0 nominal))) in (extent placename 0) in (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "water bodies",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Assam",
+				"India"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are not protected region in Assam in India",
+		"cleaned_Question": "Where are not protected region in Assam in India",
+		"placename": [
+			"Assam",
+			"India"
+		],
+		"field": [
+			"protected region"
+		],
+		"ner_Question": "where are not field0 nominal in placename0 in placename1",
+		"parseTreeStr": "(start (measure (location where are (false not) (coreC field 0 nominal))) in (extent placename 0) in (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "protected region",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Assam",
+				"India"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the average rating of street pavement for each borough in New York City",
+		"cleaned_Question": "What is average rating of street pavement for each borough in New York City",
+		"placename": [
+			"New York City"
+		],
+		"object": [
+			"street pavement",
+			"borough"
+		],
+		"objectquality": [
+			"rating"
+		],
+		"ner_Question": "what is average objectquality0 ordinal of object0 for each object1 in placename0",
+		"parseTreeStr": "(start what is (measure (aggre average) (coreC objectquality 0 ordinal) of (coreC object 0)) for each (support (coreC object 1)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "borough"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "street pavement"
+				},
+				{
+					"type": [
+						"objectquality"
+					],
+					"id": "2",
+					"keyword": "rating",
+					"measureLevel": "ordinal"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "3",
+					"keyword": "average"
+				}
+			],
+			"extent": [
+				"New York City"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"0"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the population density in California",
+		"cleaned_Question": "What is population density in California",
+		"placename": [
+			"California"
+		],
+		"objconobjcovpro": [
+			"population density"
+		],
+		"ner_Question": "what is objconobjcovpro0 ira in placename0",
+		"parseTreeStr": "(start what is (measure (coreC objconobjcovpro 0 ira)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objconobjcovpro"
+					],
+					"id": "0",
+					"keyword": "population density",
+					"measureLevel": "ira"
+				}
+			],
+			"extent": [
+				"California"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which bars are within half a kilometre of a metro station in Melbourne",
+		"cleaned_Question": "Which bars are within half kilometre of metro station in Melbourne",
+		"placename": [
+			"Melbourne"
+		],
+		"quantity": [
+			"half kilometre"
+		],
+		"object": [
+			"bars",
+			"metro station"
+		],
+		"ner_Question": "which object0 are within equantity0 of object1 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "metro station"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "bars"
+				}
+			],
+			"extent": [
+				"Melbourne"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which pubs are within half a kilometre of a metro station in Melbourne",
+		"cleaned_Question": "Which pubs are within half kilometre of metro station in Melbourne",
+		"placename": [
+			"Melbourne"
+		],
+		"quantity": [
+			"half kilometre"
+		],
+		"object": [
+			"pubs",
+			"metro station"
+		],
+		"ner_Question": "which object0 are within equantity0 of object1 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "metro station"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "pubs"
+				}
+			],
+			"extent": [
+				"Melbourne"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the kernel density of crime in Surrey in UK",
+		"cleaned_Question": "What is kernel density of crime in Surrey in UK",
+		"placename": [
+			"Surrey",
+			"UK"
+		],
+		"field": [
+			"kernel density"
+		],
+		"event": [
+			"crime"
+		],
+		"ner_Question": "what is field0 ratio of event0 in placename0 in placename1",
+		"parseTreeStr": "(start what is (measure (coreC field 0 ratio) of (coreC event 0)) in (extent placename 0) in (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "crime"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "kernel density",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Surrey",
+				"UK"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which mental health facilities are closest to each address in Washington DC",
+		"cleaned_Question": "Which mental health facilities are closest to each address in Washington DC",
+		"placename": [
+			"Washington DC"
+		],
+		"object": [
+			"mental health facilities",
+			"address"
+		],
+		"ner_Question": "which object0 are closest to each object1 in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are (condition (distanceR closest to) each (coreC object 1)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "address"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "mental health facilities"
+				}
+			],
+			"extent": [
+				"Washington DC"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within 15 minutes walking distance of a metro rail station in Kochi in India",
+		"cleaned_Question": "What areas are within 15 minutes walking distance of metro rail station in Kochi in India",
+		"placename": [
+			"Kochi",
+			"India"
+		],
+		"time": [
+			"15 minutes"
+		],
+		"object": [
+			"metro rail station"
+		],
+		"network": [
+			"walking distance"
+		],
+		"ner_Question": "what areas are within etime0 network0 of object0 in placename0 in placename1",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (serviceObj (time etime 0) (networkC network 0) of (origin (objectC object 0)))) in (extent placename 0) in (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "metro rail station"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "walking distance"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "4",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Kochi",
+				"India"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the average monthly rainfall for each zip code area in the Seattle",
+		"cleaned_Question": "What is average monthly rainfall for each zip code area in Seattle",
+		"placename": [
+			"Seattle"
+		],
+		"field": [
+			"monthly rainfall"
+		],
+		"object": [
+			"zip code area"
+		],
+		"ner_Question": "what is average field0 ratio for each object0 in placename0",
+		"parseTreeStr": "(start what is (measure (aggre average) (coreC field 0 ratio)) for each (support (coreC object 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "zip code area"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "monthly rainfall",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "2",
+					"keyword": "average"
+				}
+			],
+			"extent": [
+				"Seattle"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the vegetation areas larger than 6000 square meters in the Cape Peninsula",
+		"cleaned_Question": "What are vegetation areas larger than 6000 square meters in Cape Peninsula",
+		"placename": [
+			"Cape Peninsula"
+		],
+		"quantity": [
+			"6000 square meters"
+		],
+		"field": [
+			"vegetation areas"
+		],
+		"ner_Question": "what are field0 nominal larger than equantity0 in placename0",
+		"parseTreeStr": "(start what are (measure (coreC field 0 nominal)) (condition (compareR larger than) (quantity equantity 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "vegetation areas",
+					"measureLevel": "nominal"
+				}
+			],
+			"extent": [
+				"Cape Peninsula"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas have an aspect larger than 45 degree and smaller than 135 degrees in the Cape Peninsula",
+		"cleaned_Question": "What areas have aspect larger than 45 degree and smaller than 135 degrees in Cape Peninsula",
+		"placename": [
+			"Cape Peninsula"
+		],
+		"quantity": [
+			"45 degree",
+			"135 degrees"
+		],
+		"field": [
+			"aspect"
+		],
+		"ner_Question": "what areas have field0 interval larger than equantity0 and smaller than equantity1 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) (condition (boolR have) (coreC field 0 interval) (compareR larger than) (quantity equantity 0)) and (condition (compareR smaller than) (quantity equantity 1)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "aspect",
+					"measureLevel": "interval"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Cape Peninsula"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas have slope larger than 15 percent and smaller than 60 percent in the Cape Peninsula",
+		"cleaned_Question": "What areas have slope larger than 15 percent and smaller than 60 percent in Cape Peninsula",
+		"placename": [
+			"Cape Peninsula"
+		],
+		"percent": [
+			"15 percent",
+			"60 percent"
+		],
+		"field": [
+			"slope"
+		],
+		"ner_Question": "what areas have field0 ratio larger than epercent0 and smaller than epercent1 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) (condition (boolR have) (coreC field 0 ratio) (compareR larger than) (quantity epercent 0)) and (condition (compareR smaller than) (quantity epercent 1)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "slope",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Cape Peninsula"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas have an annual rainfall of more than 1000 millimeters in the Cape Peninsula",
+		"cleaned_Question": "What areas have annual rainfall of more than 1000 millimeters in Cape Peninsula",
+		"placename": [
+			"Cape Peninsula"
+		],
+		"quantity": [
+			"1000 millimeters"
+		],
+		"field": [
+			"annual rainfall"
+		],
+		"ner_Question": "what areas have field0 ratio of more than equantity0 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) (condition (boolR have) (coreC field 0 ratio) of (compareR more than) (quantity equantity 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "annual rainfall",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Cape Peninsula"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are outside 250 meters of human settlement in the Cape Peninsula",
+		"cleaned_Question": "What areas are outside 250 meters of human settlement in Cape Peninsula",
+		"placename": [
+			"Cape Peninsula"
+		],
+		"quantity": [
+			"250 meters"
+		],
+		"field": [
+			"human settlement"
+		],
+		"ner_Question": "what areas are outside equantity0 of field0 nominal in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR outside) (distField (quantity equantity 0) of (coreC field 0 nominal))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "human settlement",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Cape Peninsula"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which city is closest to each major earthquake in the world",
+		"cleaned_Question": "Which city is closest to each major earthquake in world",
+		"placename": [],
+		"object": [
+			"city"
+		],
+		"event": [
+			"major earthquake"
+		],
+		"ner_Question": "which object0 is closest to each event0 in world",
+		"parseTreeStr": "(start which (measure (coreC object 0)) is (condition (distanceR closest to) each (coreC event 0)) in (extent world))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "major earthquake"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "city"
+				}
+			],
+			"extent": [],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of maritime piracy incidents for each hexagonal grid in the world",
+		"cleaned_Question": "What is number of maritime piracy incidents for each hexagonal grid in world",
+		"placename": [],
+		"event": [
+			"maritime piracy incidents"
+		],
+		"conamount": [
+			"number"
+		],
+		"ner_Question": "what is conamount0 count of event0 for each hexagonal grid in world",
+		"parseTreeStr": "(start what is (measure (coreC conamount 0 count) of (coreC event 0)) for each (support (grid hexagonal grid)) in (extent world))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"grid"
+					],
+					"id": "0",
+					"keyword": "hexagonal grid"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "maritime piracy incidents"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are the clusters of fatal car accidents with at least three incidents inside 300 meter search distance in the United State",
+		"cleaned_Question": "Where are clusters of fatal car accidents with at least 3 incidents inside 300 meter search distance in United State",
+		"placename": [
+			"United State"
+		],
+		"quantity": [
+			"300 meter"
+		],
+		"event": [
+			"fatal car accidents",
+			"incidents"
+		],
+		"covamount": [
+			"clusters"
+		],
+		"ner_Question": "where are covamount0 loc of event0 with at least 3 event1 inside equantity0 search distance in placename0",
+		"parseTreeStr": "(start (measure (location where are (coreC covamount 0 loc) of (coreC event 0))) (condition with (compareR at least) 3 (coreC event 1)) (condition (topoR inside) (distField (quantity equantity 0))) (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"distField"
+					],
+					"id": "0",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "incidents"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "2",
+					"keyword": "fatal car accidents"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "3",
+					"keyword": "clusters",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "4",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"United State"
+			],
+			"transformation": [
+				{
+					"before": [
+						"2",
+						"0"
+					],
+					"after": [
+						"3"
+					]
+				},
+				{
+					"before": [
+						"3"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the literacy rate for each country in Africa",
+		"cleaned_Question": "What is literacy rate for each country in Africa",
+		"placename": [
+			"Africa"
+		],
+		"object": [
+			"country"
+		],
+		"objconobjconpro": [
+			"literacy rate"
+		],
+		"ner_Question": "what is objconobjconpro0 ira for each object0 in placename0",
+		"parseTreeStr": "(start what is (measure (coreC objconobjconpro 0 ira)) for each (support (coreC object 0)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "country"
+				},
+				{
+					"type": [
+						"objconobjconpro"
+					],
+					"id": "1",
+					"keyword": "literacy rate",
+					"measureLevel": "ira"
+				}
+			],
+			"extent": [
+				"Africa"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the countries where literacy rates are rising or falling in Africa between 1990 and 2015",
+		"cleaned_Question": "What are countries where literacy rates are rising or falling in Africa between 1990 and 2015",
+		"placename": [
+			"Africa"
+		],
+		"date": [
+			"between 1990 and 2015"
+		],
+		"object": [
+			"countries"
+		],
+		"objconobjconpro": [
+			"literacy rates"
+		],
+		"ner_Question": "what are object0 where objconobjconpro0 ira are rising or falling in placename0 edate0",
+		"parseTreeStr": "(start what are (measure (coreC object 0)))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "countries"
+				}
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which countries are with low literacy rates and high adolescent birth rates in Africa",
+		"cleaned_Question": "Which countries are with low literacy rates and high adolescent birth rates in Africa",
+		"placename": [
+			"Africa"
+		],
+		"object": [
+			"countries"
+		],
+		"objconobjconpro": [
+			"literacy rates",
+			"adolescent birth rates"
+		],
+		"ner_Question": "which object0 are with low objconobjconpro0 ira and high objconobjconpro0 ira in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) are with (subcon (coreC objconobjconpro 0 ira) (compareR and objconobjconpro 0 ira) quantity) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objconobjconpro"
+					],
+					"id": "0",
+					"keyword": "literacy rates",
+					"measureLevel": "ira"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "countries"
+				}
+			],
+			"extent": [
+				"Africa"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What was the cesium 137 concentration near the Chernobyl nuclear power plant in 1992",
+		"cleaned_Question": "What was cesium 137 concentration near Chernobyl nuclear power plant in 1992",
+		"placename": [
+			"Chernobyl nuclear power plant"
+		],
+		"date": [
+			"1992"
+		],
+		"field": [
+			"cesium 137 concentration"
+		],
+		"ner_Question": "what was field0 ratio near placename0 in edate0",
+		"parseTreeStr": "(start what was (measure (coreC field 0 ratio)) near (extent placename 0) in (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "cesium 137 concentration",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Chernobyl nuclear power plant"
+			],
+			"temporalEx": [
+				"1992"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What was the spatial autocorrelation of the cesium 137 concentration near the Chernobyl nuclear power plant in 1992",
+		"cleaned_Question": "What was spatial autocorrelation of cesium 137 concentration near Chernobyl nuclear power plant in 1992",
+		"placename": [
+			"Chernobyl nuclear power plant"
+		],
+		"date": [
+			"1992"
+		],
+		"field": [
+			"cesium 137 concentration"
+		],
+		"ner_Question": "what was spatial autocorrelation of field0 ratio near placename0 in edate0",
+		"parseTreeStr": "(start what was to on of field 0 ratio near placename 0 in edate 0)"
+	},
+	{
+		"question": "What was the spatial trend of the cesium 137 concentration near the Chernobyl nuclear power plant in 1992",
+		"cleaned_Question": "What was spatial trend of cesium 137 concentration near Chernobyl nuclear power plant in 1992",
+		"placename": [
+			"Chernobyl nuclear power plant"
+		],
+		"date": [
+			"1992"
+		],
+		"field": [
+			"cesium 137 concentration"
+		],
+		"ner_Question": "what was spatial trend of field0 ratio near placename0 in edate0",
+		"parseTreeStr": "(start what was of (measure (coreC field 0 ratio)) near (extent placename 0) in (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "cesium 137 concentration",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Chernobyl nuclear power plant"
+			],
+			"temporalEx": [
+				"1992"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which ZIP3 areas do have the highest per household online loan application rates in the US",
+		"cleaned_Question": "Which ZIP3 areas have highest per household online loan application rates in US",
+		"placename": [
+			"US"
+		],
+		"object": [
+			"zip3 areas"
+		],
+		"objconobjconpro": [
+			"per household online loan application rates"
+		],
+		"ner_Question": "which object0 have highest objconobjconpro0 ira in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) (condition (boolR have) (extremaR highest) (coreC objconobjconpro 0 ira)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objconobjconpro"
+					],
+					"id": "0",
+					"keyword": "per household online loan application rates",
+					"measureLevel": "ira"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "zip3 areas"
+				}
+			],
+			"extent": [
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which ZIP3 areas do have the highest average loan interest rates in the US",
+		"cleaned_Question": "Which ZIP3 areas have highest average loan interest rates in US",
+		"placename": [
+			"US"
+		],
+		"object": [
+			"zip3 areas"
+		],
+		"objectquality": [
+			"average loan interest rates"
+		],
+		"ner_Question": "which object0 have highest objectquality0 ratio in placename0",
+		"parseTreeStr": "(start which (measure (coreC object 0)) (condition (boolR have) (extremaR highest) (coreC objectquality 0 ratio)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objectquality"
+					],
+					"id": "0",
+					"keyword": "average loan interest rates",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "zip3 areas"
+				}
+			],
+			"extent": [
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the hot spots and cold spots for average loan interest rates in the US",
+		"cleaned_Question": "What is hot spots and cold spots for average loan interest rates in US",
+		"placename": [
+			"US"
+		],
+		"objectquality": [
+			"average loan interest rates"
+		],
+		"covamount": [
+			"hot spots and cold spots"
+		],
+		"ner_Question": "what is covamount0 loc for objectquality0 ratio in placename0",
+		"parseTreeStr": "(start what is (measure (coreC covamount 0 loc) for (coreC objectquality 0 ratio)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objectquality"
+					],
+					"id": "0",
+					"keyword": "average loan interest rates",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "hot spots and cold spots",
+					"measureLevel": "loc"
+				}
+			],
+			"extent": [
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within two miles of urban landuse in Loudoun County in US",
+		"cleaned_Question": "What areas are within 2 miles of urban landuse in Loudoun County in US",
+		"placename": [
+			"Loudoun County",
+			"US"
+		],
+		"quantity": [
+			"2 miles"
+		],
+		"field": [
+			"urban landuse"
+		],
+		"ner_Question": "what areas are within equantity0 of field0 nominal in placename0 in placename1",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC field 0 nominal))) in (extent placename 0) in (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "urban landuse",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Loudoun County",
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within one mile of main roads in Loudoun County in US",
+		"cleaned_Question": "What areas are within 1 mile of main roads in Loudoun County in US",
+		"placename": [
+			"Loudoun County",
+			"US"
+		],
+		"quantity": [
+			"1 mile"
+		],
+		"object": [
+			"main roads"
+		],
+		"ner_Question": "what areas are within equantity0 of object0 in placename0 in placename1",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 0))) in (extent placename 0) in (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "main roads"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Loudoun County",
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are outside 20 minute driving time from the current main hospital in Loudoun County in US",
+		"cleaned_Question": "What areas are outside 20 minute driving time from current main hospital in Loudoun County in US",
+		"placename": [
+			"Loudoun County",
+			"US"
+		],
+		"time": [
+			"20 minute"
+		],
+		"object": [
+			"current main hospital"
+		],
+		"network": [
+			"driving time"
+		],
+		"ner_Question": "what areas are outside etime0 network0 from object0 in placename0 in placename1",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR outside) (serviceObj (time etime 0) (networkC network 0) from (origin (objectC object 0)))) in (extent placename 0) in (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "current main hospital"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "driving time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "4",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Loudoun County",
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the housing districts outside 15 minutes driving time from COVID testing sites in Connecticut",
+		"cleaned_Question": "What are housing districts outside 15 minutes driving time from COVID testing sites in Connecticut",
+		"placename": [
+			"Connecticut"
+		],
+		"time": [
+			"15 minutes"
+		],
+		"object": [
+			"housing districts",
+			"covid testing sites"
+		],
+		"network": [
+			"driving time"
+		],
+		"ner_Question": "what are object0 outside etime0 network0 from object1 in placename0",
+		"parseTreeStr": "(start what are (measure (coreC object 0)) (condition (topoR outside) (serviceObj (time etime 0) (networkC network 0) from (origin (objectC object 1)))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "covid testing sites"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "driving time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "housing districts"
+				}
+			],
+			"extent": [
+				"Connecticut"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"2"
+					],
+					"after": [
+						"4_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are the street crashes in Ottawa in 2018",
+		"cleaned_Question": "Where are street crashes in Ottawa in 2018",
+		"placename": [
+			"Ottawa"
+		],
+		"date": [
+			"2018"
+		],
+		"event": [
+			"street crashes"
+		],
+		"ner_Question": "where are event0 in placename0 in edate0",
+		"parseTreeStr": "(start (measure (location where are (coreC event 0))) in (extent placename 0) in (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "street crashes"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Ottawa"
+			],
+			"temporalEx": [
+				"2018"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where is the cluster of street crashes in Ottawa in 2018",
+		"cleaned_Question": "Where is cluster of street crashes in Ottawa in 2018",
+		"placename": [
+			"Ottawa"
+		],
+		"date": [
+			"2018"
+		],
+		"event": [
+			"street crashes"
+		],
+		"covamount": [
+			"cluster"
+		],
+		"ner_Question": "where is covamount0 loc of event0 in placename0 in edate0",
+		"parseTreeStr": "(start (measure (location where is (coreC covamount 0 loc) of (coreC event 0))) in (extent placename 0) in (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "street crashes"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "cluster",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Ottawa"
+			],
+			"temporalEx": [
+				"2018"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of street crashes for each ward in Ottawa in 2018",
+		"cleaned_Question": "What is number of street crashes for each ward in Ottawa in 2018",
+		"placename": [
+			"Ottawa"
+		],
+		"date": [
+			"2018"
+		],
+		"object": [
+			"ward"
+		],
+		"event": [
+			"street crashes"
+		],
+		"conamount": [
+			"number"
+		],
+		"ner_Question": "what is conamount0 count of event0 for each object0 in placename0 in edate0",
+		"parseTreeStr": "(start what is (measure (coreC conamount 0 count) of (coreC event 0)) for each (support (coreC object 0)) in (extent placename 0) in (temEx edate 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "ward"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "street crashes"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"Ottawa"
+			],
+			"temporalEx": [
+				"2018"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are sinks in the terrain in Stowe in Vermont",
+		"cleaned_Question": "Where are sinks in terrain in Stowe in Vermont",
+		"placename": [
+			"Stowe",
+			"Vermont"
+		],
+		"field": [
+			"terrain"
+		],
+		"object": [
+			"sinks"
+		],
+		"ner_Question": "where are object0 in field0 ratio in placename0 in placename1",
+		"parseTreeStr": "(start (measure (location where are (coreC object 0))) (condition (topoRIn in (coreC field 0 ratio))) in (extent placename 0) in (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "terrain",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "sinks"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Stowe",
+				"Vermont"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				},
+				{
+					"before": [
+						"1_u"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the area of the watershed upstream in Stowe in Vermont",
+		"cleaned_Question": "What is area of watershed upstream in Stowe in Vermont",
+		"placename": [
+			"Stowe",
+			"Vermont"
+		],
+		"field": [
+			"watershed upstream"
+		],
+		"covamount": [
+			"area"
+		],
+		"ner_Question": "what is covamount0 era of field0 nominal in placename0 in placename1",
+		"parseTreeStr": "(start what is (measure (coreC covamount 0 era) of (coreC field 0 nominal)) in (extent placename 0) in (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "watershed upstream",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "area",
+					"measureLevel": "era"
+				}
+			],
+			"extent": [
+				"Stowe",
+				"Vermont"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the flow velocity field in the watershed upstream in Stowe, Vermont",
+		"cleaned_Question": "What is flow velocity field in watershed upstream in Stowe , Vermont",
+		"placename": [
+			"Stowe",
+			"Vermont"
+		],
+		"field": [
+			"flow velocity field",
+			"watershed upstream"
+		],
+		"ner_Question": "what is field0 ratio in field1 nominal in placename0 , placename1",
+		"parseTreeStr": "(start what is (measure (coreC field 0 ratio)) (condition (topoRIn in (coreC field 1 nominal))) in (extent placename 0) (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "watershed upstream",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "flow velocity field",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Stowe",
+				"Vermont"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of check ins for each hexagon grid in the San Francisco Bay Area",
+		"cleaned_Question": "What is number of check ins for each hexagon grid in San Francisco Bay Area",
+		"placename": [
+			"San Francisco Bay Area"
+		],
+		"event": [
+			"check ins"
+		],
+		"conamount": [
+			"number"
+		],
+		"ner_Question": "what is conamount0 count of event0 for each hexagon grid in placename0",
+		"parseTreeStr": "(start what is (measure (coreC conamount 0 count) of (coreC event 0)) for each (support (grid hexagon grid)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"grid"
+					],
+					"id": "0",
+					"keyword": "hexagon grid"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "check ins"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"San Francisco Bay Area"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the spatial autocorrelation of the amount of checkins for each location in the San Francisco Bay area",
+		"cleaned_Question": "What is spatial autocorrelation of amount of checkins for each location in San Francisco Bay area",
+		"placename": [
+			"San Francisco Bay area"
+		],
+		"event": [
+			"checkins"
+		],
+		"ner_Question": "what is spatial autocorrelation of amount of event0 for each location in placename0",
+		"parseTreeStr": "(start what is to on of amount of event 0 for each loc on in placename 0)"
+	},
+	{
+		"question": "What is the trend of the amount of check-ins for each grid cell in the San Francisco Bay area",
+		"cleaned_Question": "What is trend of amount of check ins for each grid cell in San Francisco Bay area",
+		"placename": [
+			"San Francisco Bay area"
+		],
+		"event": [
+			"check ins"
+		],
+		"ner_Question": "what is trend of amount of event0 for each grid cell in placename0",
+		"parseTreeStr": "(start what is of measure (subcon (coreC amount) compareR quantity) (condition of (compareR <missing <INVALID>>) (coreC event 0)))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "check ins"
+				}
+			],
+			"transformation": []
+		}
+	},
+	{
+		"question": "What is the mean annual PM2.5 concentration in Italy, Great Britain and Norway",
+		"cleaned_Question": "What is mean annual PM2.5 concentration in Italy , Great Britain and Norway",
+		"placename": [
+			"Italy",
+			"Great Britain",
+			"Norway"
+		],
+		"ner_Question": "what is mean annual pm2.5 concentration in placename0 , placename1 and placename2",
+		"parseTreeStr": "(start what is (measure 2 5 ratio) in (extent placename 0) (extent placename 1) and (extent placename 2))",
+		"cctrans": {
+			"types": [],
+			"extent": [
+				"Italy",
+				"Great Britain",
+				"Norway"
+			],
+			"transformation": []
+		}
+	},
+	{
+		"question": "Where are the emerging hot spots of PM2.5 concentration on the globe",
+		"cleaned_Question": "Where are emerging hot spots of PM2.5 concentration on globe",
+		"placename": [],
+		"covamount": [
+			"hot spots"
+		],
+		"ner_Question": "where are emerging covamount0 loc of pm2.5 concentration on globe",
+		"parseTreeStr": "(start (measure (location where are in (coreC covamount 0 loc))) of 2 5 ratio on)",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "0",
+					"keyword": "hot spots",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of traffic accidents clustered together in Pasadena, California",
+		"cleaned_Question": "What is number of traffic accidents clustered together in Pasadena , California",
+		"placename": [
+			"Pasadena",
+			"California"
+		],
+		"event": [
+			"traffic accidents"
+		],
+		"conamount": [
+			"number"
+		],
+		"ner_Question": "what is conamount0 count of event0 clustered together in placename0 , placename1",
+		"parseTreeStr": "(start what is (measure (coreC conamount 0 count) of (coreC event 0)) (measure1 to coreC) in (extent placename 0) (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "traffic accidents"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "1",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"Pasadena",
+				"California"
+			],
+			"transformation": []
+		}
+	},
+	{
+		"question": "What is the kernel density of traffic accidents in Pasadena, California",
+		"cleaned_Question": "What is kernel density of traffic accidents in Pasadena , California",
+		"placename": [
+			"Pasadena",
+			"California"
+		],
+		"field": [
+			"kernel density"
+		],
+		"event": [
+			"traffic accidents"
+		],
+		"ner_Question": "what is field0 ratio of event0 in placename0 , placename1",
+		"parseTreeStr": "(start what is (measure (coreC field 0 ratio) of (coreC event 0)) in (extent placename 0) (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "traffic accidents"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "kernel density",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Pasadena",
+				"California"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which school neighborhoods do have the largest number of traffic accidents in Pasadena in California",
+		"cleaned_Question": "Which school neighborhoods have largest number of traffic accidents in Pasadena in California",
+		"placename": [
+			"Pasadena",
+			"California"
+		],
+		"object": [
+			"school neighborhoods"
+		],
+		"event": [
+			"traffic accidents"
+		],
+		"conamount": [
+			"number"
+		],
+		"ner_Question": "which object0 have largest conamount0 count of event0 in placename0 in placename1",
+		"parseTreeStr": "(start which (measure (coreC object 0)) (condition (boolR have) (coreC conamount 0 count) of (coreC event 0)) in (extent placename 0) in (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "traffic accidents"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "1",
+					"keyword": "number",
+					"measureLevel": "count"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "school neighborhoods"
+				}
+			],
+			"extent": [
+				"Pasadena",
+				"California"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are the hot spots of traffic accidents in Pasadena in California",
+		"cleaned_Question": "Where are hot spots of traffic accidents in Pasadena in California",
+		"placename": [
+			"Pasadena",
+			"California"
+		],
+		"event": [
+			"traffic accidents"
+		],
+		"covamount": [
+			"hot spots"
+		],
+		"ner_Question": "where are covamount0 loc of event0 in placename0 in placename1",
+		"parseTreeStr": "(start (measure (location where are (coreC covamount 0 loc) of (coreC event 0))) in (extent placename 0) in (extent placename 1))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "traffic accidents"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "hot spots",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Pasadena",
+				"California"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas have a wind speed of at least 5.6 meters per second in Colorado",
+		"cleaned_Question": "What areas have wind speed of at least 5.6 meters per second in Colorado",
+		"placename": [
+			"Colorado"
+		],
+		"eventquality": [
+			"wind speed"
+		],
+		"ner_Question": "what areas have eventquality0 ratio of at least equantity0 per second in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) (condition (boolR have) (coreC eventquality 0 ratio) of (compareR at least) (quantity equantity 0)) per support in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"eventquality"
+					],
+					"id": "0",
+					"keyword": "wind speed",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Colorado"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within 10 miles of current transmission lines with a voltage greater than 400 in Colorado",
+		"cleaned_Question": "What areas are within 10 miles of current transmission lines with voltage greater than 400 in Colorado",
+		"placename": [
+			"Colorado"
+		],
+		"quantity": [
+			"10 miles"
+		],
+		"object": [
+			"current transmission lines"
+		],
+		"objectquality": [
+			"voltage"
+		],
+		"ner_Question": "what areas are within equantity0 of object0 with objectquality0 ratio greater than 400 in placename0",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (topoR within) (distField (quantity equantity 0) of (coreC object 0))) with (subcon (coreC objectquality 0 ratio) (compareR greater than) (quantity 400)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objectquality"
+					],
+					"id": "0",
+					"keyword": "voltage",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "current transmission lines"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "3",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Colorado"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				},
+				{
+					"before": [
+						"1_u"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the driving time from the windfarm company headquarters to the windfarm areas in Colorado",
+		"cleaned_Question": "What is driving time from windfarm company headquarters to windfarm areas in Colorado",
+		"placename": [
+			"Colorado"
+		],
+		"object": [
+			"windfarm company headquarters",
+			"windfarm areas"
+		],
+		"network": [
+			"driving time"
+		],
+		"ner_Question": "what is network0 from object0 to object1 in placename0",
+		"parseTreeStr": "(start what is (measure (networkC network 0) from (origin (objectC object 0)) to (destination (objectC object 1))) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "windfarm company headquarters"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "windfarm areas"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "2",
+					"keyword": "driving time"
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				}
+			],
+			"extent": [
+				"Colorado"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"1",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the difference between breast cancer mortality rates of black women and white women for each county in the US",
+		"cleaned_Question": "What is difference between breast cancer mortality rates of black women and white women for each county in US",
+		"placename": [
+			"US"
+		],
+		"object": [
+			"black women",
+			"white women",
+			"county"
+		],
+		"objconobjconpro": [
+			"breast cancer mortality rates"
+		],
+		"ner_Question": "what is difference between objconobjconpro0 ira of object0 and object1 for each object2 in placename0",
+		"parseTreeStr": "(start what is (measure (coreC objconobjconpro 0 ira) of (coreC object 0)))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "black women"
+				},
+				{
+					"type": [
+						"objconobjconpro"
+					],
+					"id": "1",
+					"keyword": "breast cancer mortality rates",
+					"measureLevel": "ira"
+				}
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the breast cancer mortality rate ratio between black women and white women for each county in the US",
+		"cleaned_Question": "What is breast cancer mortality rate ratio between black women and white women for each county in US",
+		"placename": [
+			"US"
+		],
+		"object": [
+			"black women",
+			"white women",
+			"county"
+		],
+		"proportion": [
+			"breast cancer mortality rate ratio"
+		],
+		"ner_Question": "what is proportion0 ira between object0 and object1 for each object2 in placename0",
+		"parseTreeStr": "(start what is (measure (coreC proportion 0 ira) (coreC object 0) and (coreC object 1)) for each (support (coreC object 2)) in (extent placename 0))",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "county"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "white women"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "black women"
+				},
+				{
+					"type": [
+						"proportion"
+					],
+					"id": "3",
+					"keyword": "breast cancer mortality rate ratio",
+					"measureLevel": "ira"
+				}
+			],
+			"extent": [
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"0"
+					],
+					"after": [
+						"2_u_u"
+					]
+				},
+				{
+					"before": [
+						"1_u",
+						"2_u_u"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	}
+]

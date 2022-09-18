@@ -1,0 +1,53 @@
+grammar GeoAnQu;
+
+// parser rules start with lowercase letters, lexer rules with uppercase
+//start
+start : ((WH ((AUX extrema? measure) | (measure AUX? false?))) | (measure AUX? false? allocation? 'that'?))
+        (condition ('and'|false)?)*
+        (('for each'|'per') support)?
+        ('in' extent+)*
+        (('in'|'on')? temEx)? ;
+false : Flase ;
+measure: location | (conAm coreC) | ((coreC 'and'?)+ (('for'|'of'|'to'|'by'|'from') ('new'? extrema? coreC | grid | distBandNei | 'placename' DIGIT))*);
+//measure: location | (coreC (('for'|'of'|'to'|'by'|'from') ('new'? coreC | grid))* (('to'|'from'|'of') extrema? coreC)?) ;
+location: Location ;
+conAm: ConAm ;
+weight: ('weighted by' coreC ('of' coreC)?) | ('with similar' coreC);
+allocation: ('best site'|'best sites') ('for'|'of') 'new'? coreC ;
+condition: ((topoR (boolField|coreC|grid))|(boolR extrema? coreC? (date|time|(predR? quantity)|percent|('of' coreC 'to' coreC*))?)|(extrema (coreC ('of' coreC)?)?)|(coreC 'of'? coreC?)|weight|topoRIn|('for each'? distBand))
+(('with'|'that' AUX?)? false? subcon)? ;  //(extrema ('to each'? coreC
+boolField: (quantity|(time 'and'?)+) (('from'|'of')? extrema? (coreC|grid))+  ('to' extrema? coreC)?; //('from'|'of')? extrema? coreC ('from' extrema? (coreC|grid))?
+subcon: (coreC predR quantity)|(topoR (boolField|coreC))|(predR coreC)|(extrema coreC ('of' coreC)?);
+topoR: TOPO ;
+topoRIn: 'in' coreC ('of' coreC)?;
+boolR: Boolean ;
+extrema: Extrema ;
+predR: Predicate ;
+quantity: 'equantity' DIGIT ;
+date: 'edate' DIGIT ;
+time: 'etime' DIGIT ;
+percent: 'epercent' DIGIT ;
+grid: quantity? ('grids'|'grid cells'|'grid'|'grid cell'|'hexagonal grids'|'hexagonal grid') ('with' 'diameter of'? quantity)? ;
+distBandNei: DIGIT 'nearest neighbors' ;
+distBand: (quantity 'distance band') | (quantity 'by' quantity 'increments') ;
+coreC: ('field' DIGIT ML)| ('object' DIGIT) |('objectquality' DIGIT ML)|('event' DIGIT)|('eventquality' DIGIT ML)|('network' DIGIT)
+|('objconamount' DIGIT ML)|('eveconamount' DIGIT ML)|('conamount' DIGIT ML)|('covamount' DIGIT ML)|('amount' DIGIT)|('objconobjconpro' DIGIT ML)|('eveconobjconpro' DIGIT ML)|('objconobjcovpro' DIGIT ML)|('conconpro' DIGIT ML)|('concovpro' DIGIT ML)|('covpro' DIGIT ML)|('proportion' DIGIT ML);
+support : grid | coreC | (quantity 'area') | 'placename' DIGIT;
+extent: 'placename' DIGIT ;
+temEx: 'edate' DIGIT ;
+
+
+// lexer rules
+WH : 'which'|'what'|'from where' ;
+Location :  'where'|'what area'|'what areas' ;
+ConAm : 'how many' ;
+AUX : 'is'|'are'|'was'|'were' ;
+Flase : 'not'|'but not' ;
+TOPO : 'inside'|'located in'|'within'|'covered by'|'away from'|'contain'|'contains'|'touch'|'equal'|'cover'|'intersected with'|'intersects with'|'on top of'|'outside'|'affected by';
+Boolean : 'have'|'has'|'visible'|'for sale'|'open at'|'aged'|'answered by';
+Extrema : 'longest'|'highest'|'nearest'|'closest'|'closest to'|'biggest'|'most popular'|'fastest'|'most intense'|'minimum'|'maximum'|'maximize';
+Predicate : 'lower than'|'larger than'|'at least'|'less than'|'more than';
+ML : 'nominal'|'boolean'|'ordinal'|'interval'|'ratio'|'era'|'ira'|'count'|'loc';
+DIGIT: [0-9]+;
+WS: [ \n\t\r]+ -> skip;
+COMMA: ',' -> skip;

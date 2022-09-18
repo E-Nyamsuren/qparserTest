@@ -1,0 +1,115 @@
+{
+    "terms": [
+        {
+            "concept": "nominal",
+            "cct": "Nom"
+        },
+        {
+            "concept": "ordinal",
+            "cct": "Ord"
+        },
+        {
+            "concept": "boolean",
+            "cct": "Bool"
+        },
+        {
+            "concept": "interval",
+            "cct": "Itv"
+        },
+        {
+            "concept": "ratio",
+            "cct": "Ratio"
+        },
+        {
+            "concept": "era",
+            "cct": "Ratio"
+        },
+        {
+            "concept": "ira",
+            "cct": "Ratio"
+        },
+        {
+            "concept": "count",
+            "cct": "Ratio"
+        },
+        
+        {
+            "concept": "loc",
+            "cct": "Nom"
+        },
+        
+        {
+            "concept": "Nom",
+            "cct": "Nom"
+        },
+        {
+            "concept": "Ord",
+            "cct": "Ord"
+        },
+        {
+            "concept": "Bool",
+            "cct": "Bool"
+        },
+        {
+            "concept": "Itv",
+            "cct": "Itv"
+        },
+        {
+            "concept": "Ratio",
+            "cct": "Ratio"
+        }
+    ],
+    
+    "hierachy": [
+        {
+            "super": "nominal",
+            "sub": "ordinal"
+        },
+        {
+            "super": "nominal",
+            "sub": "boolean"
+        },
+        {
+            "super": "ordinal",
+            "sub": "interval"
+        },
+        {
+            "super": "interval",
+            "sub": "ratio"
+        },
+        {
+            "super": "ratio",
+            "sub": "era"
+        },
+        {
+            "super": "ratio",
+            "sub": "ira"
+        },
+        {
+            "super": "era",
+            "sub": "count"
+        },
+        
+        {
+            "super": "nominal",
+            "sub": "loc"
+        },
+        
+        {
+            "super": "Nom",
+            "sub": "Ord"
+        },
+        {
+            "super": "Nom",
+            "sub": "Bool"
+        },
+        {
+            "super": "Ord",
+            "sub": "Itv"
+        },
+        {
+            "super": "Itv",
+            "sub": "Ratio"
+        }
+    ]
+}

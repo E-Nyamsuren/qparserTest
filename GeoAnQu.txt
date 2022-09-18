@@ -1,0 +1,305 @@
+Which houses are for sale in Utrecht
+Which houses have construction year between 1990 and 2000 in Utrecht
+What houses are for sale and within 0.5km from the main roads in Utrecht
+What houses are for sale and within 1km from the nearest school in Utrecht
+What houses are for sale and within 1km from the nearest supermarket in Utrecht
+What houses are for sale in urban areas in Utrecht
+What houses are for sale and in neighborhoods with crime rate lower than 50 per 1000 people in Utrecht
+What houses are for sale and within 1km from the parks in Utrecht
+Where are the five star hotels in the Happy Valley ski resort
+Which cafes are in forested areas in Happy Valley ski resort
+Where are the ski pistes in Happy Valley ski resort
+Where is the most popular ski piste in Happy Valley ski resort
+Which ski piste is longest in the Happy Valley
+Which hotels are within 0.3km of the longest ski piste in Happy Valley ski resort
+Which neighborhood has the highest crime rate in Amsterdam
+Where are the individual crimes in Amsterdam
+Which neighborhood has the highest robbery rate in Amsterdam
+Which neighborhood has the highest arson rate in Amsterdam
+Which neighborhood has the highest burglary rate in Amsterdam
+Which buildings are within 1 minute of driving time from a fire station in Fort Worth
+Which schools are not within 3 minutes of driving time from a fire station in Fort Worth
+What is the nearest fire station to each fire call in Fort Worth
+Where are the hurricanes in Oleander in 1977
+What was the trajectory of a hurricane in Oleander in 1977
+Where was the most intense hurricane in Oleander in 1977
+Where was the fastest hurricane in Oleander in 1977
+How many buildings are affected by a hurricane in Oleander
+Which buildings are affected by a hurricane in Oleander
+How many people are affected by a hurricane in Oleander
+Where are the rocky areas in Spain
+What areas do have slope larger than 10 percent in Spain
+What areas do have altitude between 700 and 2000 meters in Spain
+What areas do have temperature larger than 0 degrees in Spain
+What areas do have precipitation lower than 40 millimeters in Spain
+What areas are at least 3000 meters from the rivers in Spain
+What areas are more than 5000 meters from the roads in Spain
+What is the predicted distribution probability for the little midwife toad in Spain in 2030
+Where are the industrial areas in Utrecht
+Which park is biggest in Utrecht
+Which freeways do have 4 lanes in Netherlands
+Which city has the highest crime rate in Netherlands
+Which city has the highest population density in Netherlands
+What areas do not have groundwater in the UK
+What areas do have population density less than 300 per square kilometer in UK
+Where are not conservation areas in UK
+Which emergency vehicle is closest to the accident in Utrecht
+Where is the best site for a new landfill in UK
+Which forestry areas have Norwegian Spruce trees in Europe
+Where is the cluster of student residence in Utrecht
+Where is the best site for a landscape conservation park in Zdarske Vrchy
+Where are the fire stations in Utrecht
+Where are the holiday accommodations within 1000 meters of a windsurfing spot in Italy
+Where are the flat areas within 500 meters of a major highway in the United Kingdom
+What is the traffic flow of the A28 motorway in Utrecht
+What is the shortest route from the resort center to ski pistes in Happy Valley
+Where is the best site for a wind farm in Portland
+Where is the best site for a new retail store in Toronto
+What is the land use in Netherlands
+Where are the commercial areas in Amsterdam
+How many luxury hotels are in Happy Valley ski resort
+Where are the luxury hotels with more than 20 bedrooms in Happy Valley ski resort
+Where are forestry lands in Happy Valley ski resort
+Which hotels are within 0.2 km of the main roads in Happy Valley ski resort
+Which land use contains meteorological stations in Netherlands
+Which roads are intersected with forest areas in UK
+What is the land use in the Happy Valley resort
+Where is the best site for a new ski piste in Happy Valley
+What is the predicted probability surface for snowfall in Happy Valley
+What is the shortest route from the center of the resort to the ski pistes in Happy Valley
+What is the slope of the new ski piste in the Happy Valley resort
+From where are the wind farms visible in Amsterdam
+Which ski pistes are in the avalanche danger zones in Happy Valley
+Where are the accidents within ski pistes in the Happy Valley
+Which visitor facilities are in the Happy Valley
+Which properties are within 1000 meters of an abandoned lead smelter in Oleander
+What areas are affected by a tsunami in Indonesia in 2004
+What areas are within 100 meters of cameras in Salford
+Where is the best site of bus stops that maximize the overall population that are within 600-meters buffer areas of bus stops in Utrecht
+What are the political leaning for each county in the United States
+What is the number of crime cases for each police district in Texas in 2018
+Where is the mean center of households in Amsterdam Oost district
+What is the central feature of bank branches in Oleander
+What is the mean center of library patrons for each district in Oleander
+What is the mean center of the fire calls weighted by the priority in Fort Worth
+What is the mean center of customers weighted by the number of transactions in Oleander city
+What is the central feature of bank branches weighted by the number of employees in Oleander city
+Which police stations have fire calls that are outside their alarm territory in Fort Worth
+What are the standard distance circles of West Nile Virus in Fort Worth
+What is the directional trend of fire calls for each fire station in Fort Worth
+What is the directional trend of crimes in Amsterdam in 2019
+What is the directional trend of animal migration in the Netherlands
+Where are the single-family zones in Tarrant County, Texas
+What is the total linear mileage of the asphalt streets in Tarrant County in Texas
+How many arson cases in Fort Worth in February 2004
+Where are the Hispanic food stores in Tarrant County in Texas
+What is the median household income for each census block in Tarrant County in Texas
+Where are the auto accidents in Tarrant County in Texas
+What is the total population for each census block in Tarrant County, Texas
+What is the median age for each census tract in Tarrant County in Texas
+What is the construction year for each house in Oleander
+What is the percentage of the Hispanic population to the total population for each census block in Tarrant County in Texas
+Which park has the highest proportion of bald eagles to the bird totals in Texas
+What is the number of tractors for each road in Texas
+What is the percentage of owner-occupied houses to the house totals for each census tract in Tarrant County, Texas
+What is the crime rate for each police district in Texas in 2019
+What are the vote totals of an election for each precinct in Dallas
+What is the population density for each census block in Dallas
+What is the density of robberies for each police beat in Dallas
+What is the density of rental units for each census block in Oleander
+What is the density of rental units in Oleander
+What is the density of registered voters for each precinct in Dallas
+What is the point density of trees in parks in Oleander
+What is the point density of fire calls in Oleander
+What is the density surface of rainfall measurements in the Netherlands
+What is the density surface of temperature measurements in Oleander city
+What are the directional trends of tornadoes in the Tarrant county from 2010 to 2019
+What is the mean direction of freeways in Oleander
+What is the degree of clustering of fire calls in Fort Worth in 2015
+What is the degree of dispersion of the flu cases in Amsterdam in 2019
+What is the degree of clustering of false fire alarms in Fort Worth
+Where are the clusters of fire alarms with the similar priority in Fort Worth
+Where are the clusters of census blocks with the similar median household income in Fort Worth
+Where are the clusters of neighborhoods with the similar crime rate in Amsterdam
+What is the percentage of residential areas inside 1 km area of the central station in Oleander
+Which properties are within 0.5 km of the Independence Day parade route in Washington D.C.
+How many dwelling units are in the flood zones in Oleander
+What is the total area of flood zones in Oleander
+What are the land use inside the flood zones in Oleander
+What is the number of households for each precinct in Dallas County
+How many high school students are in the school district of senior high schools in Oleander
+Which properties are within 100 meters of creeks in Oleander
+What areas are within 1000 meters of the schools in Oleander
+What areas are within 2000 meters of the playgrounds in Oleander
+What areas are within 1000 meters of the arcades in Oleander
+What areas are within 100 meters of the hospitals in Oleander
+What is the percentage of soil type inside 1 km buffer areas of the water wells in Oleander
+What is the percentage of noise polluted areas in Oleander
+Where are the houses within 2640 feet, 5280 feet, and 8920 feet from fire station in Oleander
+What areas are within 300 meters of runways in Schiphol airport
+How many fire calls were answered by a fire station that was not the closest to the fire accidents in Oleander
+Which fire hydrant is closest to the households in Oleander
+What areas are within 3 minutes of driving time from the nearest fire station in Oleander
+How many buildings are within 3 minutes of driving time from fire stations in Oleander
+Which buildings are located in the fire areas in Oleander
+Which buildings were affected by tornado in Oleander
+What is the walkability for each neighborhood in Ghent
+What is the density of residential units for each neighborhood in Ghent
+What is the connectivity for each neighborhood in Ghent
+What is the land use mix for each neighborhood in Ghent
+What is the bikeability surface in the Metro Vancouver region in Canada
+What is the density surface of bicycle route in the Metro Vancouver region in Canada
+Where are the bicycle tracks in the Metro Vancouver region in Canada
+What is the density raster of intersections of bicycle-friendly streets in the Metro Vancouver region in Canada
+What is the topography in the Metro Vancouver region in Canada
+What is the point density of cycling destinations in the Metro Vancouver region in Canada
+What is the network distance from hexagonal grid with 2000 meter to the closest public primary school in the Multifunctional Urban Area of Barcelona
+What is the average network distance for people to public primary schools for each census area in Rotterdam
+What is the percentage of population within 1000 meters network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Rotterdam
+What is the network distance to primary schools for children aged between 4 and 12 in Rotterdam
+What is the average network distance for people to the three closest primary schools for each census area in Rotterdam
+What is the number of people within 1000 meters network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Barcelona
+Where are the best sites for metro stations in Karbala in Iraq
+What is the travel time from the centroids of municipalities to outpatient services in Tuscany in Italy
+What is the number of inhabitants for each 100 by 100 meter grid in Banten province in Indonesia
+What area are within 50 km from family physician services in Saskatchewan in Canada
+What is the travel time from the centers of 2 by 2 km grid cells to the closest hospital in Sichuan in China
+What is the percentage of elderly population to the total population for each municipality area in the Aichi prefecture in Japan
+What is the density of elderly population for each municipality area in Aichi prefecture in Japan
+What is the potential geographic access of communities to the sexual and productive health services located in rural areas in Chibuto, Chokwe, Guija and Mandlakaze in Mozambique in 2019
+Where is the best site for a new landfill in Houston
+What areas are not green belt areas in Houston
+What areas are outside 3000 meters from turbojet runways in Houston
+What areas are within 800 meter from major highways in Houston
+What is the potential accessibility by local road for each 2 by 2 km grid cell in Finland
+What is the potential accessibility by regional road for each 2 by 2 km grid cell in Finland
+Where are clusters of pedestrian injuries in Georgia from 2001 to 2010
+Where are the clusters of Chinese immigrants in Auckland from 1991 to 2006
+Where is the hot spots and cold spots of robberies in Shanghai in January 2009
+What is the cervix cancer mortality rate of white females for each city in the Western USA from 1970 to 1994
+What is the interpolation surface of NO2 concentration in Vancouver
+Where are health care facilities in Riverside San Bernardino in California
+What is the population density for each neighborhood in Riverside San Bernardino in CA
+What is the population density for each neighborhoods with no health care facility in Riverside-San Bernardino
+What land use is on top of sandy soil in the Netherlands
+What is the aspect of ski pistes in the Happy Valley resort
+What are the directional trends of animal grazing in the Netherlands
+What is the density surface of crape myrtles in Oleander
+What is the access score to family physicians services for each Census Consolidated Subdivision in Saskatchewan in Canada
+What is the accessibility index from the centers of 2 by 2 km grid cells to the closest public hospital in Sichuan in China
+What areas are within 10 minutes, 30 minutes, and 60 minutes of driving time from private hospitals in Sichuan in China
+What is the travel time from the centers of 2 by 2 km grids to public hospitals in East Sichuan in China
+What is the kernel density surface of potential geographic access of communities to clinics in Chibuto in Mozambique in 2019
+What is the percentage of vacant houses to the house totals in Tarrant County, Texas
+What is the access score to nurse practitioner services for each Census Consolidated Subdivision in Alberta in Canada
+What is the percentage of population older than 65 for each Census Consolidated Subdivision in Alberta in Canada
+What is the potential accessibility by national network for each 2 by 2km grid cell in Finland
+What is the travel time from the centroids of 2 by 2 km grid cells to the nearest railway stations in Finland
+What is the travel time from the centroids of 2 by 2 km grid cells to the nearest airport in Finland
+What areas do not have natural resources in the UK
+What areas are within 1000 meters of the major transport routes in Amsterdam
+What is the proportion of people over 65 for each PC4 area in Amsterdam
+What is the density of parks for each PC4 area in Amsterdam
+What is the average Euclidean distance to parks for each PC4 area in Amsterdam
+What is the mean center of the fire calls for each alarm territory in Fort Worth in 2017
+What is the central feature of fire station in Fort Worth
+What is the mean center of crimes weighted by the severity in Fort Worth
+Where is a best site for a radioactive waste site in UK
+Which store has the highest monthly sales in Tarrant County in Texas
+Which road has the highest traffic count in Tarrant County in Texas
+What is the mean center of accidents weighted by priority for each alarm territories in Fort Worth
+What is the standard distance circles of fire calls answered by fire stations in Fort Worth
+What are the standard distance circles of accidents for each fire station in Fort Worth
+What are the standard distance circles of fire calls weighted by priority for each fire station in Fort Worth
+What is the directional trend of fire calls weighted by priority for each fire station in Fort Worth
+What is the number of Hispanics for each census block in Tarrant County in Texas
+What is the percentage of the bald eagle to the bird totals for each park in Texas
+What is the households density for each census block in Fort Worth
+What is the average neighbor distance to the 7 nearest neighbors for fire alarms in Fort Worth
+What is the degree of clustering of fire alarms weighted by priority for each 60 meters distance band in Fort Worth
+What is the degree of clustering of fire alarms weighted by priority rankings for each distance band from 60 to 600 meters by 30 meter increments in Fort Worth
+What is the number of fire calls for each 150 by 150 meters grid cell in Fort Worth
+What is the degree of clustering of fire alarms density for each 300 meter distance band in Fort Worth
+Where are the clusters of fire alarms with similar priority for each 300 meter distance band in Fort Worth
+Which houses are within 2 minutes driving time from fire stations in Oleander
+Which houses are within 3 minutes driving time from the nearest fire station in Oleander
+What is the Euclidean distance to hospitals in Oleander
+What areas are within 20 minutes driving time from flower stores in Oleander
+Which warehouse is closest to each household in Oleander
+Where are the tornado touchdowns in Oleander in April 2011
+What is the tornado path in Oleander in April 2011
+What is a hurricane trajectory in Texas
+What is the intensity of a hurricane in Texas
+What is the mean center of crimes in Amsterdam in 2019
+What is the degree of clustering of 911 calls for each distance band from 300 to 900 meters by 60 meter increments in Portland
+What is the average network distance to hospitals from household for each PC4 area in Amsterdam
+What is the average construction year of buildings for each PC4 area in Amsterdam
+What is the average Euclidean distance to hospitals per PC4 area in Amsterdam
+What is the number of elderly people for each neighborhood in Amsterdam
+What is the density of green roofs for each PC4 area in Amsterdam
+What is the average income of households for each PC4 area in Amsterdam
+What is the percentage of seriously lonely people for each PC4 area in Amsterdam
+What is the Euclidean distance to green areas in Amsterdam
+What is the average Euclidean distance to green areas per PC4 area in Amsterdam
+What is the average Euclidean distance to residential care complexes per PC4 area in Amsterdam
+What is the Safety Index for each district in Amsterdam
+What is the number of sport facilities in a 1000 square meters circle per neighborhood in Amsterdam
+What is the Euclidean distance to subway stations in Amsterdam
+What is the average Euclidean distance to subway stations per neighborhood in Amsterdam
+What is the Euclidean distance to tram stations in Amsterdam
+What is the average Euclidean distance to a tram station per neighborhood in Amsterdam
+What is the tree density for each PC4 area in Amsterdam
+What is the average urban heat island effect for each PC4 area in Amsterdam
+What is the WOZ-waarde for each neighborhood in Amsterdam
+What is the wall plant density for each PC4 area in Amsterdam
+What is the percentage of water areas for each PC4 area in Amsterdam
+What is the percentage of population between 16 and 24 years to the total population per neighborhood in Amsterdam
+Which buildings are not within 1 minute of driving time from a fire station in Fort Worth
+Which fire station is closest to the fire calls in Fort Worth
+What is the number of buildings affected by a hurricane in Oleander
+What is the number of people affected by a hurricane in Oleander
+What areas are outside 3000 meters of the rivers in Spain
+What areas are outside 5000 meters of the roads in Spain
+What is the number of luxury hotels in Happy Valley ski resort
+What is the number of arson cases in Fort Worth on February 2004
+What is the number of election votes for each precinct in Dallas
+What is the number of dwelling units inside the flood zones in Oleander
+What is the number of high school students for each senior high school district in Oleander
+What is the number of buildings within 3 minutes of driving time from fire stations in Oleander
+Where are the off street paths in the Metro Vancouver region in Canada
+What land use areas are intersected with sandy soil in the Netherlands
+What is the degree of dispersion for fire calls for each fire station in Fort Worth
+What is the degree of dispersion for fire calls weighted by priority for each fire station in Fort Worth
+What is the percentage of elderly population to the total population for each 1 km grid in the Aichi prefecture in Japan
+What is the population for each city in Aichi prefecture in Japan
+What is the density of elderly population for each 500 meters grid in Aichi prefecture in Japan
+What is the lung cancer mortality rate of white males for each city in the Western USA from 1970 to 1994
+Where is the hot spots and cold spots of thefts in Shanghai in December 2009
+What is the number of injured pedestrians for each census tract in Georgia from 2001 to 2010
+Where are the clusters of Indian immigrants in Auckland from 1991 to 2006
+Where are the clusters of Korean immigrants in Auckland from 1991 to 2007
+Where are the clusters of Filipino immigrants in Auckland from 1991 to 2008
+Where are the clusters of Japanese immigrants in Auckland from 1991 to 2009
+Where are the clusters of Cambodian immigrants in Auckland from 1991 to 2010
+What is the number of inhabitants for each village in Banten province in Indonesia
+What areas are outside 300 meters from streams in Houston
+What areas are not park in Houston
+What areas are outside 155 meters from nature reserve districts in Houston
+What areas are outside 155 meters from endangered species areas in Houston
+What areas are outside 155 meters from developed areas in Houston
+What areas are not wetlands in Houston
+What areas are outside 60 meters from water body in Houston
+What areas are outside 60 meters from residence in Houston
+What areas are outside 150 meters from hospitals in Houston
+What areas are outside 150 meters from schools in Houston
+What areas are not hurricane areas in Houston
+What areas are not floodplain in Houston
+What areas are within 500 meters from universities in Karbala in Iraq
+What areas are within 500 meters from religious places in Karbala in Iraq
+Which hospitals are within 15 minute driving time of an accident in New York
+What is the average Euclidean distance to the nearest supermarket for each PC4 area in Amsterdam
+What is the average noise level for each PC4 area in Amsterdam
+What is the average temperature for each PC4 area in Amsterdam
+What is the total area of agriculture in Netherlands
+What area do have elevation higher than 30 meters in Netherlands
+What is the density of greens for each PC4 area in Amsterdam

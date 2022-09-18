@@ -1,0 +1,698 @@
+summits
+summit
+gates
+gate
+uplands
+upland
+inns
+inn
+restaurants
+restaurant
+fords
+ford
+cabins
+cabin
+hotels
+hotel
+bridges
+bridge
+pubs
+pub
+aquaria
+aquarium
+aquariums
+aquarium
+airports
+airport
+highlands
+highland
+roads
+road
+sands
+sand
+deserts
+desert
+streets
+street
+stadiums
+stadium
+highways
+highway
+hometowns
+hometown
+forts
+fort
+frontiers
+frontier
+campgrounds
+campground
+zoos
+zoo
+resorts
+resort
+campuses
+campus
+seaports
+seaport
+allotments
+allotment
+archipelagos
+archipelago
+archipelagoes
+archipelago
+areas
+area
+atolls
+atoll
+boroughs
+borough
+cities
+city
+continents
+continent
+countries
+country
+counties
+county
+districts
+district
+farms
+farm
+pistes
+piste
+hamlets
+hamlet
+islands
+island
+islets
+islet
+localities
+locality
+municipalities
+municipality
+neighbourhoods
+neighbourhood
+oceans
+ocean
+provinces
+province
+regions
+region
+seas
+sea
+shielings
+shieling
+squares
+square
+states
+state
+suburbs
+suburb
+malls
+mall
+towns
+town
+gulfs
+gulf
+villages
+village
+bars
+bar
+barangays
+barangay
+beaches
+beach
+communities
+community
+fairgrounds
+fairground
+houses
+house
+habitats
+habitat
+ports
+port
+subdistricts
+subdistrict
+tehsils
+tehsil
+voisinages
+voisinage
+apartments
+apartment
+arrondissements
+arrondissement
+bays
+bay
+blocks
+block
+buildings
+building
+bld
+bunkers
+bunker
+businesses
+business
+camps
+camp
+capes
+cape
+bights
+bight
+caves
+cave
+cays
+cay
+cemeteries
+cemetery
+clearances
+clearance
+climbings
+climbing
+clubs
+club
+coastlines
+coastline
+confluences
+confluence
+countrysides
+countryside
+creeks
+creek
+crofts
+corft
+debes
+debe
+deltas
+delta
+departments
+department
+dolinas
+dolina
+estates
+estate
+factories
+factory
+farmhouses
+farmhouse
+farmlands
+farmland
+farmyards
+farmyard
+fells
+fell
+fields
+field
+garages
+garage
+harbours
+harbout
+hermitages
+hermitage
+hills
+hill
+hollows
+hollow
+homes
+home
+homesteads
+homestead
+housings
+housing
+huts
+hut
+inlands
+inland
+inlets
+inlet
+isl
+isl
+islets
+islet
+lakes
+lake
+lands
+land
+landmarks
+landmark
+locals
+local
+locations
+location
+memorials
+memorial
+moors
+moor
+mounds
+mound
+museums
+museum
+naturals
+natutal
+neighborhoods
+neighborhood
+offices
+office
+parishes
+parish
+parks
+park
+peaks
+peak
+peninsulas
+peninsula
+piers
+pier
+pits
+pit
+places
+place
+plateaux
+plateau
+plazas
+plaza
+polders
+polder
+prefectures
+perfecture
+promontories
+promontory
+quarries
+quarry
+raceways
+raceway
+railways
+railway
+ranches
+ranch
+reefs
+reef
+residences
+residence
+residentials
+residential
+rocks
+rock
+roofs
+roof
+ruins
+ruin
+rurals
+rural
+saddles
+saddle
+settlements
+settlement
+shires
+shire
+shoals
+shoal
+sites
+site
+skerries
+skerry
+stables
+stable
+stations
+station
+stockyards
+stockyard
+studs
+stud
+subregions
+subregion
+suburbans
+suburban
+territories
+terrirtory
+townships
+township
+unincorporateds
+unincorporated
+uninhabiteds
+uninhabited
+valleys
+valley
+vicinities
+vincinity
+vineyards
+wineyard
+walls
+wall
+wards
+ward
+warehouses
+warehouse
+wetlands
+wetland
+wharves
+wharf
+wineries
+winery
+woods
+wood
+woodlands
+woodland
+yards
+yard
+zones
+zone
+mountains
+mountain
+towers
+tower
+rivers
+river
+forests
+forest
+hospitals
+hospital
+cafes
+cafe
+spots
+spot
+universities
+university
+churches
+church
+pharmacies
+pharmacy
+shops
+shop
+precincts
+precinct
+supermarkets
+supermarket
+markets
+market
+windmills
+windmill
+prefectures
+prefecture
+business establishment
+business establishments
+magnet schools
+magnet school
+residential area
+residential areas
+forested area
+forested areas
+rural areas
+rural area
+rural landscape
+rural landscapes
+health service units
+health service unit
+district center
+district centers
+nonprofit organizations
+nonprofit organization
+municipalities
+municipality
+settlement
+settlements
+sprawl
+sprawls
+urban sprawls
+urban sprawl
+metropolitan area
+metropolitan areas
+ethnoburbs
+ethnoburb
+built-up area
+built-up areas
+enterprises
+enterprise
+residential units
+residential unit
+parcels
+parcel
+asphalt street
+asphalt streets
+bus stop
+bus stops
+area of forestry
+areas of forestry
+bank
+bank branch
+bank branches
+banks
+building
+buildings
+built-up land
+built-up lands
+cafe
+cafes
+city centre
+city center
+cities
+city
+city block
+city blocks
+clinic
+clinics
+coastline
+coastlines
+commercial building
+commercial buildings
+commercially zoned land
+commercially zoned lands
+conservation area
+conservation areas
+counties
+county
+district
+districts
+elementary school
+elementary schools
+facilities
+facility
+fire station
+fire stations
+floodplain
+floodplains
+flood-prone area
+flood-prone areas
+food resource
+food resources
+forest land
+forest lands
+forestry land
+forestry lands
+health care facilities
+health care facility
+health facilities
+health facility
+highway
+highways
+specialty store
+specialty stores
+accommodation
+accommodations
+hotel
+hotels
+house
+houses
+industrial area
+industrial plant
+industrial plants
+industry area
+industry areas
+intersection
+intersections
+irrigated area
+irrigated areas
+lake
+lakes
+lakeshore
+lakeshores
+land parcel
+land parcels
+landfill
+landfills
+landscape conservation zone
+landscape conservation zones
+libraries
+library
+library branch
+library branches
+match factories
+match factory
+measuring station
+measuring stations
+meteorological station
+meteorological stations
+metro station
+metro stations
+metropolitan area
+metropolitan areas
+metropolitan school
+metropolitan schools
+metropolitan service area
+metropolitan service areas
+motorway
+motorways
+nature reserve
+nature reserves
+neighborhood
+neighborhoods
+noise mitigation zone
+noise mitigation zones
+non-urban area
+non-urban areas
+office
+offices
+oil-well
+oil-wells
+superstore
+superstores
+paddy field
+paddy fields
+park
+parks
+pizza chain
+pizza chains
+police department
+police departments
+police district
+police districts
+police station
+police stations
+precinct
+precincts
+primary school
+primary schools
+private hospital
+private hospitals
+privately owned land
+privately owned lands
+public neighborhood school
+public neighborhood schools
+quite zone
+quite zones
+railway station
+railway stations
+residential area
+residential areas
+residential communities
+residential community
+residential neighborhood
+residential neighborhoods
+residential site
+residential sites
+resort
+resorts
+river
+river delta
+river deltas
+rivers
+road
+road section
+road sections
+road segment
+road segments
+roads
+rocky area
+rocky areas
+rural communities
+rural community
+school
+schools
+shop
+shops
+sidewalk
+sidewalks
+residential properties
+residential property
+ski piste
+ski pistes
+ski resort
+ski resorts
+station
+stations
+store
+stores
+street
+streets
+suburb
+suburban area
+suburban areas
+suburbs
+theme park
+theme parks
+town
+towns
+urban area
+urban areas
+vacant house
+vacant houses
+visitor facilities
+visitor facility
+water well
+water wells
+watershed
+watersheds
+wind farm
+wind farms
+danger zone
+danger zones
+water resources
+water resource
+urban community
+urban communities
+ski lift stations
+ski lift station
+runways
+runway
+rental houses
+rental house
+public hospitals
+public hospital
+playgrounds
+playground
+museums
+museum
+hospitals
+hospital
+gyms
+gym
+grasslands
+grassland
+freeways
+freeway
+forested areas
+forested area
+forest areas
+forest area
+factory
+factories
+community
+communities
+coffee shops
+coffee shop
+charging stations
+charging station
+chain stores
+chain store
+central city
+central cities
+arcades
+arcade
+aerodrome
+aerodromes
+castle
+castles
+college
+colleges
+monument
+monuments
+theater
+theaters
+tourist attraction
+tourist attractions
+visitor attraction
+visitor attractions
+nuclear power plants
+nuclear power plant
+rain forest
+aquifer

@@ -1,0 +1,41 @@
+main roads
+main road
+roads
+road
+major highways
+major highway
+motorways
+motorway
+asphalt streets
+asphalt street
+freeways
+freeway
+bicycle routes
+bicycle route
+off street paths
+off street path
+off street bike paths
+off street bike path
+bicycle tracks
+bicycle track
+bicycle friendly streets
+bicycle friendly street
+local roads
+local road
+regional roads
+regional road
+national roads
+national road
+streets
+street
+major transport routes
+major transport route
+highways
+highway
+major roads
+major road
+all season roads
+all season road
+planned roads
+planned road
+path

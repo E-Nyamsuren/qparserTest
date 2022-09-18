@@ -1,0 +1,6582 @@
+[
+	{
+		"question": "What is the slope in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "slope",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the Euclidean distance to recreational sites in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "recreational sites"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "euclidean distance",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the Euclidean distance to schools in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "schools"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "euclidean distance",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the least cost route from school to the closest road intersection based on slope and land use in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "school"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "road intersection"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "2",
+					"keyword": "slope"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "3",
+					"keyword": "land use"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "4",
+					"keyword": "least cost route",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "5",
+					"keyword": "cost surface",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"2",
+						"3"
+					],
+					"after": [
+						"5"
+					]
+				},
+				{
+					"before": [
+						"0",
+						"1",
+						"5"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the interpolated surface of ozone concentration in California",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "ozone concentration",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "interpolated surface",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"California"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the shortest network-based path through the Palace of Fine Arts, Ferry Building and de Young Meseum in San Francisco",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"placename"
+					],
+					"id": "0",
+					"keyword": "Palace of Fine Arts"
+				},
+				{
+					"type": [
+						"placename"
+					],
+					"id": "1",
+					"keyword": "Ferry Building"
+				},
+				{
+					"type": [
+						"placename"
+					],
+					"id": "2",
+					"keyword": "de Young Meseum"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "3",
+					"keyword": "shortest network based path"
+				}
+			],
+			"extent": [
+				"San Francisco"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"1",
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the four fire stations with shortest network-based paths to 1202 Twin Peaks Blvd in San Francisco",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"placename"
+					],
+					"id": "1",
+					"keyword": "1202 Twin Peaks Blvd"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "2",
+					"keyword": "shortest network based paths"
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				}
+			],
+			"extent": [
+				"San Francisco"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"1",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the four fire stations within 3 minutes of travel time from a fire in San Francisco",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "fire"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "travel time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "fire stations"
+				}
+			],
+			"extent": [
+				"San Francisco"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"2"
+					],
+					"after": [
+						"4_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within 3 minutes, 5 minutes, and 10 minutes from six warehouses in Paris",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "warehouses"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "2",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "3",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Paris"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"2"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of stores for each warehouse service area in Paris",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "warehouse service area"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "stores"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"Paris"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the delivery cost from warehouse to stores within 10 minute driving time in Paris",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"network"
+					],
+					"id": "0",
+					"keyword": "driving time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "2",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "3",
+					"keyword": "warehouse"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "stores"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "5",
+					"keyword": "delivery cost"
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "6",
+					"keyword": "road data"
+				}
+			],
+			"extent": [
+				"Paris"
+			],
+			"transformation": [
+				{
+					"before": [
+						"3",
+						"4",
+						"2"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"1"
+					],
+					"after": [
+						"4_u"
+					]
+				},
+				{
+					"before": [
+						"4_u",
+						"3",
+						"2"
+					],
+					"after": [
+						"5"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the fastest delivery route through 21 stores in Paris",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "stores"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "delivery route"
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "2",
+					"keyword": "road data"
+				}
+			],
+			"extent": [
+				"Paris"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"2"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the fastest routes for three 15000-pound capacity trucks to meet the delivery demands of 25 grocery stores in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"network"
+					],
+					"id": "0",
+					"keyword": "fastest routes"
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "1",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "trucks"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "3",
+					"keyword": "grocery stores"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"3",
+						"2",
+						"1"
+					],
+					"after": [
+						"0"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the fastest routes for three vans to transport customers from their homes to hospitals between 8 am to 10 am in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"network"
+					],
+					"id": "0",
+					"keyword": "fastest routes"
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "1",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "customers homes"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "3",
+					"keyword": "hospitals"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "vans"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"4",
+						"3",
+						"2",
+						"1"
+					],
+					"after": [
+						"0"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the three locations for new stores that maximize attendance in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "stores"
+				},
+				{
+					"type": [
+						"objconamount"
+					],
+					"id": "1",
+					"keyword": "population",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": "locations"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the three locations for new stores that maximize market share in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "stores"
+				},
+				{
+					"type": [
+						"objconamount"
+					],
+					"id": "1",
+					"keyword": "population",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": "locations"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which fire station is the closest to each school in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "school"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "fire station"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the two fire stations closest to each school in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "school"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "fire stations"
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of people between 15 and 19 years old within 1.5 miles of library branches in Palm city",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "library branches"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "people"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "3",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"Palm city"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				},
+				{
+					"before": [
+						"2_u"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of asian people within 1.5 miles of library branches in Palm city",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "library branches"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "asian people"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "3",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"Palm city"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				},
+				{
+					"before": [
+						"2_u"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the median household income within 1.5 miles of library branches in Palm city",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "library branches"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"objconamount"
+					],
+					"id": "2",
+					"keyword": "household income",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "3",
+					"keyword": "median"
+				}
+			],
+			"extent": [
+				"Palm city"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within four minutes of a fire station at 5 pm on Friday in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire station"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				}
+			],
+			"temporalEx": [
+				"5 pm",
+				"Friday"
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the areas within a four-minute drive of each fire station at 2 a.m. on Tuesday in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire station"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				}
+			],
+			"temporalEx": [
+				"2 a.m.",
+				"Tuesday"
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within 6 minute, 8 minute, 10 minute and 12 minute of driving time from fire stations in Utrecht",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "driving time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "4",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Utrecht"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "How many streetlights for each district in San Diego",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "district"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "streetlights"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"San Diego"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the total length of bike routes for each district in San Diego",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "district"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "bike routes"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "2",
+					"keyword": "length",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "3",
+					"keyword": "total"
+				}
+			],
+			"extent": [
+				"San Diego"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"0"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which districts have more than 165 streetlights and less than 250 streetlights in San Diego",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "streetlights",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "districts"
+				}
+			],
+			"extent": [
+				"San Diego"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which districts have bicycle routes more than 2.3 miles and less than 3.9 miles in San Diego",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "bicycle routes",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "districts"
+				}
+			],
+			"extent": [
+				"San Diego"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What liquor stores are within 1000 foot of schools, libraries, and parks in El Cajon",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "parks"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "libraries"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "schools"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "3",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "liquor stores"
+				}
+			],
+			"extent": [
+				"El Cajon"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"3"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"3_u"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"3_u_u"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"3_u",
+						"3_u_u"
+					],
+					"after": [
+						"3_u_u_u"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"3_u_u_u"
+					],
+					"after": [
+						"4_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What liquor stores are within 1000 foot of schools in El Cajon",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "schools"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "liquor stores"
+				}
+			],
+			"extent": [
+				"El Cajon"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What liquor stores are within 1000 foot of libraries in El Cajon",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "libraries"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "liquor stores"
+				}
+			],
+			"extent": [
+				"El Cajon"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What liquor stores are within 1000 foot of parks in El Cajon",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "parks"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "liquor stores"
+				}
+			],
+			"extent": [
+				"El Cajon"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are inside 1000 foot of schools in El Cajon",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "schools"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"El Cajon"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which college district has the fewest households with an annual income less than 30000 dollars in the United States of America",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objconamount"
+					],
+					"id": "0",
+					"keyword": "annual income",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "households"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "college district"
+				}
+			],
+			"extent": [
+				"United States of America"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1_u"
+					],
+					"after": [
+						"2_u_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which wind farm proposals are not intersect with the wild lands in Scotland",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "wild lands"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "wind farm proposals"
+				}
+			],
+			"extent": [
+				"Scotland"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are visible from the wild lands in Scotland",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "wild lands"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Scotland"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which wind farm proposals are nearest to the roads in Scotland",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "roads"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "wind farm proposals"
+				}
+			],
+			"extent": [
+				"Scotland"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within a quarter mile of a store or restaurant, light rail stop, and planned commercial district in Gresham",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "planned commercial district"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "light rail stop"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "restaurant"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "3",
+					"keyword": "store"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "4",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "5",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"4"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"4_u"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"4_u_u"
+					]
+				},
+				{
+					"before": [
+						"3"
+					],
+					"after": [
+						"4_u_u_u"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"4_u",
+						"4_u_u",
+						"4_u_u_u"
+					],
+					"after": [
+						"4_u_u_u_u"
+					]
+				},
+				{
+					"before": [
+						"4_u_u_u_u"
+					],
+					"after": [
+						"5"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within a quarter mile of a store in Gresham",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "store"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within a quarter mile of a restaurant in Gresham",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "restaurant"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within a quarter mile of light rail stop in Gresham",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "light rail stop"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within a quarter mile of planned commercial district in Gresham",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "planned commercial district"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which gas stations are in Gresham",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "gas stations"
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the area of currently mixed use zones in Gresham",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "currently mixed use zones",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "area",
+					"measureLevel": "era"
+				}
+			],
+			"extent": [
+				"Gresham"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of tornadoes for each state in the United States of America from 1950 to 2011",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "state"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "tornadoes"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"United States of America"
+			],
+			"temporalEx": [
+				"from 1950 to 2011"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which county has the highest Fujita damage scale in the United States of America from 1950 to 2011",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objectquality"
+					],
+					"id": "0",
+					"keyword": "fujita damage scale",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "county"
+				}
+			],
+			"extent": [
+				"United States of America"
+			],
+			"temporalEx": [
+				"from 1950 to 2011"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the mean directions of tornadoes for each county in the United States of America from 1950 to 2011",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "county"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "tornadoes"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "2",
+					"keyword": "mean directions",
+					"measureLevel": "loc"
+				}
+			],
+			"extent": [
+				"United States of America"
+			],
+			"temporalEx": [
+				"from 1950 to 2011"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the risk index of new homelessness for each census tract in Los Angeles",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "census tract"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "homelessness"
+				},
+				{
+					"type": [
+						"eventquality"
+					],
+					"id": "2",
+					"keyword": "risk index",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Los Angeles"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which census tracts have more than 200 unemployed people over 16 years old in Los Angeles",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "unemployed people"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "census tracts"
+				}
+			],
+			"extent": [
+				"Los Angeles"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where is the hot spot of homeless population density for each 20000 feet distance band in Los Angeles",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"distanceBand"
+					],
+					"id": "0",
+					"keyword": "20000 feet distance band"
+				},
+				{
+					"type": [
+						"objconobjcovpro"
+					],
+					"id": "1",
+					"keyword": "homeless population density",
+					"measureLevel": "ira"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "2",
+					"keyword": "hot spot",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "3",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Los Angeles"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which vacant lots are larger than 20 acres, within 1 mile of a freeway, and outside the flood zone in Hillsboro",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "flood zone",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "freeway"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "3",
+					"keyword": "vacant lots",
+					"measureLevel": "nominal"
+				}
+			],
+			"extent": [
+				"Hillsboro"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"0"
+					],
+					"after": [
+						"3_u"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"2"
+					],
+					"after": [
+						"3_u_u"
+					]
+				},
+				{
+					"before": [
+						"3_u",
+						"3_u_u"
+					],
+					"after": [
+						"3_u_u_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which vacant lots are larger than 20 acres in Hillsboro",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "vacant lots",
+					"measureLevel": "nominal"
+				}
+			],
+			"extent": [
+				"Hillsboro"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which vacant lots are within 1 mile of a freeway in Hillsboro",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "freeway"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "2",
+					"keyword": "vacant lots",
+					"measureLevel": "nominal"
+				}
+			],
+			"extent": [
+				"Hillsboro"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which vacant lots are outside the flood zone in Hillsboro",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "flood zone",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "vacant lots",
+					"measureLevel": "nominal"
+				}
+			],
+			"extent": [
+				"Hillsboro"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the average cost per acre for each potential sites in Hillsboro",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "potential sites"
+				},
+				{
+					"type": [
+						"objconobjcovpro"
+					],
+					"id": "1",
+					"keyword": "average cost per acre",
+					"measureLevel": "ira"
+				}
+			],
+			"extent": [
+				"Hillsboro"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are the private lands in Crook county, Deschutes county, and Jefferson county",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "private lands",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Crook county",
+				"Deschutes county",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the Euclidean distance to the rivers in Crook, Deschutes, and Jefferson county",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "rivers"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "euclidean distance",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Crook",
+				"Deschutes",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which airports are within 50 mile of Crook, Deschutes and Jefferson county",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"placename"
+					],
+					"id": "0",
+					"keyword": "Crook"
+				},
+				{
+					"type": [
+						"placename"
+					],
+					"id": "1",
+					"keyword": "Deschutes"
+				},
+				{
+					"type": [
+						"placename"
+					],
+					"id": "2",
+					"keyword": "Jefferson"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "3",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "airports"
+				}
+			],
+			"extent": [
+				"Crook",
+				"Deschutes",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"1",
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"4"
+					],
+					"after": [
+						"4_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within 60 minutes of airports in Crook, Deschutes, and Jefferson county",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "airports"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "2",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "3",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Crook",
+				"Deschutes",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"2"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which peaks are greater than or equal to 2000 meters and within 40 miles of the countries borders in Crook, Deschutes, and Jefferson county",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "countries borders"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "peaks"
+				}
+			],
+			"extent": [
+				"Crook",
+				"Deschutes",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are visible from peaks in Crook, Deschutes, and Jefferson county",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "peaks"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Crook",
+				"Deschutes",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the average euclidean distance to rivers for each standard deviational ellipses of golf courses in Crook, Deschutes, and Jefferson county",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "golf courses"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "standard deviational ellipses",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "rivers"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "3",
+					"keyword": "euclidean distance",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "4",
+					"keyword": "average"
+				}
+			],
+			"extent": [
+				"Crook",
+				"Deschutes",
+				"Jefferson county"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"1"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which parcels have an average slope of less than 10 percent in Poway",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "slope",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "1",
+					"keyword": "average"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "parcels"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1",
+						"2"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which parcels are within 1500 feet of the major road in Poway",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "major road"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "parcels"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which census blocks are within a four-minute travel time from fire stations in Poway",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "travel time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "census blocks"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"2"
+					],
+					"after": [
+						"4_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the percentage of census blocks within 4 minute travel time from fire stations in Poway",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "travel time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "census blocks"
+				},
+				{
+					"type": [
+						"proportion"
+					],
+					"id": "5",
+					"keyword": "percentage",
+					"measureLevel": "ira"
+				},
+				{
+					"type": [
+						"amount"
+					],
+					"id": "6",
+					"keyword": "",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"amount"
+					],
+					"id": "7",
+					"keyword": "",
+					"measureLevel": "era"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"4"
+					],
+					"after": [
+						"4_u"
+					]
+				},
+				{
+					"before": [
+						"4_u"
+					],
+					"after": [
+						"6"
+					]
+				},
+				{
+					"before": [
+						"4"
+					],
+					"after": [
+						"7"
+					]
+				},
+				{
+					"before": [
+						"6",
+						"7"
+					],
+					"after": [
+						"5"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the total population within a four-minute travel time from fire stations in Poway",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "travel time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"objconamount"
+					],
+					"id": "4",
+					"keyword": "total population",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"2"
+					],
+					"after": [
+						"4_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the total property values within a four-minute travel time from fire stations in Poway",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "travel time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "4",
+					"keyword": "property values",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "5",
+					"keyword": "total"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"2"
+					],
+					"after": [
+						"5"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the total miles of streets within four minutes of fire stations in Poway",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "fire stations"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "2",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "3",
+					"keyword": "streets"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "4",
+					"keyword": "total miles",
+					"measureLevel": "era"
+				}
+			],
+			"extent": [
+				"Poway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"2",
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1",
+						"3"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the cluster for the people over 55 years old in USA in 2019",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "people"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "cluster",
+					"measureLevel": "loc"
+				}
+			],
+			"extent": [
+				"USA"
+			],
+			"temporalEx": [
+				"2019"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the hot spot of house vacancy rate in USA in 2019",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objconobjconpro"
+					],
+					"id": "0",
+					"keyword": "house vacancy rate",
+					"measureLevel": "ira"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "hot spot",
+					"measureLevel": "loc"
+				}
+			],
+			"extent": [
+				"USA"
+			],
+			"temporalEx": [
+				"2019"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the ratio of population over 55 years old in a zip code area to the total population over 55 years old in USA in 2019",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objconamount"
+					],
+					"id": "0",
+					"keyword": "total population",
+					"measureLevel": "count"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "zip code area"
+				},
+				{
+					"type": [
+						"objconamount"
+					],
+					"id": "2",
+					"keyword": "population",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"proportion"
+					],
+					"id": "3",
+					"keyword": "ratio",
+					"measureLevel": "ira"
+				}
+			],
+			"extent": [
+				"USA"
+			],
+			"temporalEx": [
+				"2019"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"2"
+					],
+					"after": [
+						"2_u"
+					]
+				},
+				{
+					"before": [
+						"2_u",
+						"0"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "At which locations is the number of traffic accidents increasing in Florida between 2010 and 2015",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "traffic accidents"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "1",
+					"keyword": "number",
+					"measureLevel": "count"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": "location"
+				}
+			],
+			"extent": [
+				"Florida"
+			],
+			"temporalEx": [
+				"between 2010 and 2015"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "At which range of time of the day is the number of car accidents highest between 2010 and 2015 in Florida",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "car accidents"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "1",
+					"keyword": "number",
+					"measureLevel": "count"
+				},
+				{
+					"type": [
+						"time"
+					],
+					"id": "2",
+					"keyword": "range of time"
+				}
+			],
+			"extent": [
+				"Florida"
+			],
+			"temporalEx": [
+				"between 2010 and 2015"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where do the car accidents between 3:00 and 5:00 pm occur in Florida between 2010 and 2015",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "car accidents"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Florida"
+			],
+			"temporalEx": [
+				"between 2010 and 2015"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are hot spots of violent crime incidents in Florida in 2019",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "violent crime incidents"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "hot spots",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Florida"
+			],
+			"temporalEx": [
+				"2019"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "At which locations has the number of violent crime incident increased in Florida in 2019",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "violent crime incidents"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "1",
+					"keyword": "number",
+					"measureLevel": "count"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Florida"
+			],
+			"temporalEx": [
+				"2019"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where do hot spots of crime incidents overlap with hot spots of unemployment in Florida in 2019",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "unemployment"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "hot spots",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "2",
+					"keyword": "crime incidents"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "3",
+					"keyword": "hot spots",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "4",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Florida"
+			],
+			"temporalEx": [
+				"2019"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"1"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which residential properties are within 1 km of a school in Swellendam",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "school"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "residential properties"
+				}
+			],
+			"extent": [
+				"Swellendam"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which residential properties are larger than 100 square meters in Swellendam",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "residential properties"
+				}
+			],
+			"extent": [
+				"Swellendam"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which residential properties are within 50 meters of a main road in Swellendam",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "main road"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "residential properties"
+				}
+			],
+			"extent": [
+				"Swellendam"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which residential properties are within 500 meters of a restaurant in Swellendam",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "restaurant"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "residential properties"
+				}
+			],
+			"extent": [
+				"Swellendam"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within 1000 meters of roads in Assam in India",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "roads"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Assam",
+				"India"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are outside 5 km of water bodies in Assam in India",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "water bodies",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Assam",
+				"India"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are not protected region in Assam in India",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "protected region",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Assam",
+				"India"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the average rating of street pavement for each borough in New York City",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "borough"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "street pavement"
+				},
+				{
+					"type": [
+						"objectquality"
+					],
+					"id": "2",
+					"keyword": "rating",
+					"measureLevel": "ordinal"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "3",
+					"keyword": "average"
+				}
+			],
+			"extent": [
+				"New York City"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"0"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the population density in California",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objconobjcovpro"
+					],
+					"id": "0",
+					"keyword": "population density",
+					"measureLevel": "ira"
+				}
+			],
+			"extent": [
+				"California"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which bars are within half a kilometre of a metro station in Melbourne",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "metro station"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "bars"
+				}
+			],
+			"extent": [
+				"Melbourne"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which pubs are within half a kilometre of a metro station in Melbourne",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "metro station"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "pubs"
+				}
+			],
+			"extent": [
+				"Melbourne"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the kernel density of crime in Surrey in UK",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "crime"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "kernel density",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Surrey",
+				"UK"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which mental health facilities are closest to each address in Washington DC",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "address"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "mental health facilities"
+				}
+			],
+			"extent": [
+				"Washington DC"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within 15 minutes walking distance of a metro rail station in Kochi in India",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "metro rail station"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "walking distance"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "4",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Kochi",
+				"India"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the average monthly rainfall for each zip code area in the Seattle",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "zip code area"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "monthly rainfall",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"aggre"
+					],
+					"id": "2",
+					"keyword": "average"
+				}
+			],
+			"extent": [
+				"Seattle"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the vegetation areas larger than 6000 square meters in the Cape Peninsula",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "vegetation areas",
+					"measureLevel": "nominal"
+				}
+			],
+			"extent": [
+				"Cape Peninsula"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas have an aspect larger than 45 degree and smaller than 135 degrees in the Cape Peninsula",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "aspect",
+					"measureLevel": "interval"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Cape Peninsula"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas have slope larger than 15 percent and smaller than 60 percent in the Cape Peninsula",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "slope",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Cape Peninsula"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas have an annual rainfall of more than 1000 millimeters in the Cape Peninsula",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "annual rainfall",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Cape Peninsula"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are outside 250 meters of human settlement in the Cape Peninsula",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "human settlement",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Cape Peninsula"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which city is closest to each major earthquake in the world",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "major earthquake"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "city"
+				}
+			],
+			"extent": [
+				"world"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of maritime piracy incidents for each hexagonal grid in the world",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"grid"
+					],
+					"id": "0",
+					"keyword": "hexagonal grid"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "maritime piracy incidents"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": ["world"],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are the clusters of fatal car accidents with at least three incidents inside 300 meter search distance in the United State",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "fatal car accidents"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "clusters",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"United State"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the literacy rate for each country in Africa",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "country"
+				},
+				{
+					"type": [
+						"objconobjconpro"
+					],
+					"id": "1",
+					"keyword": "literacy rate",
+					"measureLevel": "ira"
+				}
+			],
+			"extent": [
+				"Africa"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the countries where literacy rates are rising or falling in Africa between 1990 and 2015",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "countries"
+				},
+				{
+					"type": [
+						"objconobjconpro"
+					],
+					"id": "1",
+					"keyword": "literacy rates",
+					"measureLevel": "ira"
+				}
+			],
+			"extent": [
+				"Africa"
+			],
+			"temporalEx": [
+				"between 1990 and 2015"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"1"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which countries are with low literacy rates and high adolescent birth rates in Africa",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "countries"
+				},
+				{
+					"type": [
+						"objconobjconpro"
+					],
+					"id": "1",
+					"keyword": "literacy rates",
+					"measureLevel": "ira"
+				},
+				{
+					"type": [
+						"objconobjconpro"
+					],
+					"id": "2",
+					"keyword": "adolescent birth rates",
+					"measureLevel": "ira"
+				}
+			],
+			"extent": [
+				"Africa"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"1",
+						"2"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What was the cesium 137 concentration near the Chernobyl nuclear power plant in 1992",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "cesium 137 concentration",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Chernobyl nuclear power plant"
+			],
+			"temporalEx": [
+				"1992"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What was the spatial autocorrelation of the cesium 137 concentration near the Chernobyl nuclear power plant in 1992",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"correlation"
+					],
+					"id": "0",
+					"keyword": "spatial autocorrelation"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "cesium 137 concentration",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Chernobyl nuclear power plant"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"0"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What was the spatial trend of the cesium 137 concentration near the Chernobyl nuclear power plant in 1992",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"trend"
+					],
+					"id": "0",
+					"keyword": "spatial trend"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "cesium 137 concentration",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Chernobyl nuclear power plant"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"0"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which ZIP3 areas do have the highest per household online loan application rates in the US",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objconobjconpro"
+					],
+					"id": "0",
+					"keyword": "per household online loan application rates",
+					"measureLevel": "ira"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "zip3 areas"
+				}
+			],
+			"extent": [
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which ZIP3 areas do have the highest average loan interest rates in the US",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objectquality"
+					],
+					"id": "0",
+					"keyword": "average loan interest rates",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "zip3 areas"
+				}
+			],
+			"extent": [
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the hot spots and cold spots for average loan interest rates in the US",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objectquality"
+					],
+					"id": "0",
+					"keyword": "average loan interest rates",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "hot spots and cold spots",
+					"measureLevel": "loc"
+				}
+			],
+			"extent": [
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within two miles of urban landuse in Loudoun County in US",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "urban landuse",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Loudoun County",
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within one mile of main roads in Loudoun County in US",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "main roads"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "1",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Loudoun County",
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are outside 20 minute driving time from the current main hospital in Loudoun County in US",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "current main hospital"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "driving time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "4",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Loudoun County",
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What are the housing districts outside 15 minutes driving time from COVID testing sites in Connecticut",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "covid testing sites"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "1",
+					"keyword": "driving time"
+				},
+				{
+					"type": [
+						"serviceObj"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "4",
+					"keyword": "housing districts"
+				}
+			],
+			"extent": [
+				"Connecticut"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"4",
+						"2"
+					],
+					"after": [
+						"4_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are the street crashes in Ottawa in 2018",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "street crashes"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Ottawa"
+			],
+			"temporalEx": [
+				"2018"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where is the cluster of street crashes in Ottawa in 2018",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "street crashes"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "cluster",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Ottawa"
+			],
+			"temporalEx": [
+				"2018"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of street crashes for each ward in Ottawa in 2018",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "ward"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "street crashes"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"Ottawa"
+			],
+			"temporalEx": [
+				"2018"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are sinks in the terrain in Stowe in Vermont",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "terrain",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "sinks"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Stowe",
+				"Vermont"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				},
+				{
+					"before": [
+						"1_u"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the area of the watershed upstream in Stowe in Vermont",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "watershed upstream",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "area",
+					"measureLevel": "era"
+				}
+			],
+			"extent": [
+				"Stowe",
+				"Vermont"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the flow velocity field in the watershed upstream in Stowe, Vermont",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "watershed upstream",
+					"measureLevel": "nominal"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "flow velocity field",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Stowe",
+				"Vermont"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of check ins for each hexagon grid in the San Francisco Bay Area",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"grid"
+					],
+					"id": "0",
+					"keyword": "hexagon grid"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "1",
+					"keyword": "check ins"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"San Francisco Bay Area"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the spatial autocorrelation of the amount of checkins for each location in the San Francisco Bay area",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"correlation"
+					],
+					"id": "0",
+					"keyword": "spatial autocorrelation"
+				},
+				{
+					"type": [
+						"amount"
+					],
+					"id": "1",
+					"keyword": "amount",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "2",
+					"keyword": "checkins"
+				}
+			],
+			"extent": [
+				"San Francisco Bay area"
+			],
+			"transformation": [
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"0"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the trend of the amount of check-ins for each grid cell in the San Francisco Bay area",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"grid"
+					],
+					"id": "0",
+					"keyword": "grid cell"
+				},
+				{
+					"type": [
+						"trend"
+					],
+					"id": "1",
+					"keyword": "trend"
+				},
+				{
+					"type": [
+						"amount"
+					],
+					"id": "2",
+					"keyword": "amount",
+					"measureLevel": "era"
+				},
+				{
+					"type": [
+						"event"
+					],
+					"id": "3",
+					"keyword": "checkins"
+				}
+			],
+			"extent": [
+				"San Francisco Bay area"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the mean annual PM2.5 concentration in Italy, Great Britain and Norway",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "PM2.5 concentration",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Italy",
+				"Great Britain",
+				"Norway"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"0_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are the emerging hot spots of PM2.5 concentration on the globe",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"field"
+					],
+					"id": "0",
+					"keyword": "PM2.5 concentration",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "emerging hot spots",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"globe"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the number of traffic accidents clustered together in Pasadena, California",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "traffic accidents"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "cluster"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "2",
+					"keyword": "number",
+					"measureLevel": "count"
+				}
+			],
+			"extent": [
+				"Pasadena",
+				"California"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the kernel density of traffic accidents in Pasadena, California",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "traffic accidents"
+				},
+				{
+					"type": [
+						"field"
+					],
+					"id": "1",
+					"keyword": "kernel density",
+					"measureLevel": "ratio"
+				}
+			],
+			"extent": [
+				"Pasadena",
+				"California"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Which school neighborhoods do have the largest number of traffic accidents in Pasadena in California",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "traffic accidents"
+				},
+				{
+					"type": [
+						"conamount"
+					],
+					"id": "1",
+					"keyword": "number",
+					"measureLevel": "count"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "school neighborhoods"
+				}
+			],
+			"extent": [
+				"Pasadena",
+				"California"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"1"
+					],
+					"after": [
+						"2_u"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are the hot spots of traffic accidents in Pasadena in California",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"event"
+					],
+					"id": "0",
+					"keyword": "traffic accidents"
+				},
+				{
+					"type": [
+						"covamount"
+					],
+					"id": "1",
+					"keyword": "hot spots",
+					"measureLevel": "loc"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "2",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Pasadena",
+				"California"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas have a wind speed of at least 5.6 meters per second in Colorado",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"eventquality"
+					],
+					"id": "0",
+					"keyword": "wind speed",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "1",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Colorado"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are within 10 miles of current transmission lines with a voltage greater than 400 in Colorado",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"objectquality"
+					],
+					"id": "0",
+					"keyword": "voltage",
+					"measureLevel": "ratio"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "current transmission lines"
+				},
+				{
+					"type": [
+						"distField"
+					],
+					"id": "2",
+					"keyword": ""
+				},
+				{
+					"type": [
+						"location"
+					],
+					"id": "3",
+					"keyword": ""
+				}
+			],
+			"extent": [
+				"Colorado"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"1_u"
+					]
+				},
+				{
+					"before": [
+						"1_u"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the driving time from the windfarm company headquarters to the windfarm areas in Colorado",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "windfarm company headquarters"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "windfarm areas"
+				},
+				{
+					"type": [
+						"network"
+					],
+					"id": "2",
+					"keyword": "driving time"
+				},
+				{
+					"type": [
+						"network",
+						"object"
+					],
+					"id": "3",
+					"keyword": "road data"
+				}
+			],
+			"extent": [
+				"Colorado"
+			],
+			"transformation": [
+				{
+					"before": [
+						"0",
+						"1",
+						"3"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the difference between breast cancer mortality rates of black women and white women for each county in the US",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "county"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "black women"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "white women"
+				},
+				{
+					"type": [
+						"objconobjconpro"
+					],
+					"id": "3",
+					"keyword": "breast cancer mortality rates",
+					"measureLevel": "ira"
+				},
+				{
+					"type": [
+						"difference"
+					],
+					"id": "4",
+					"keyword": "difference"
+				}
+			],
+			"extent": [
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"3"
+					]
+				},
+				{
+					"before": [
+						"2",
+						"0"
+					],
+					"after": [
+						"3_u"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"3_u"
+					],
+					"after": [
+						"4"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the breast cancer mortality rate ratio between black women and white women for each county in the US",
+		"cctrans": {
+			"types": [
+				{
+					"type": [
+						"object"
+					],
+					"id": "0",
+					"keyword": "county"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "1",
+					"keyword": "white women"
+				},
+				{
+					"type": [
+						"object"
+					],
+					"id": "2",
+					"keyword": "black women"
+				},
+				{
+					"type": [
+						"proportion"
+					],
+					"id": "3",
+					"keyword": "breast cancer mortality rate ratio",
+					"measureLevel": "ira"
+				}
+			],
+			"extent": [
+				"US"
+			],
+			"transformation": [
+				{
+					"before": [
+						"2",
+						"1",
+						"0"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	}
+]
