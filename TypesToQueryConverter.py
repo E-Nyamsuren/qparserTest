@@ -174,31 +174,31 @@ class TypesToQueryConverter:
 
         if T.questionK not in qJson:
             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                        , f"'{T.questionK}' not found in '{qJson}'.")
+                          , f"'{T.questionK}' not found in '{qJson}'.")
             qJson[T.validK] = "F"
         else:
             questionStr = qJson[T.questionK]
 
         if T.cctransK not in qJson:
             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                        , f"'{T.cctransK}' not found in '{questionStr}'.")
+                          , f"'{T.cctransK}' not found in '{questionStr}'.")
             qJson[T.validK] = "F"
             return
 
         if T.typesK not in qJson[T.cctransK]:
             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                        , f"'{T.typesK}' not found in '{questionStr}'.")
+                          , f"'{T.typesK}' not found in '{questionStr}'.")
             qJson[T.validK] = "F"
             return
         else:
             typesList = qJson[T.cctransK][T.typesK]
             if not typesList:
                 Logger.cPrint(Logger.ERROR_TYPE, methodName
-                            , f"'{T.typesK}' has empty value in '{questionStr}'.")
+                              , f"'{T.typesK}' has empty value in '{questionStr}'.")
                 qJson[T.validK] = "F"
             elif not isinstance(typesList, list):
                 Logger.cPrint(Logger.ERROR_TYPE, methodName
-                            , f"'{T.typesK}' is not a list in '{questionStr}'.")
+                              , f"'{T.typesK}' is not a list in '{questionStr}'.")
                 qJson[T.validK] = "F"
             else:
                 for typeObj in typesList:
@@ -206,19 +206,21 @@ class TypesToQueryConverter:
                     # [SC] validate 'id' in type object
                     if T.idK not in typeObj:
                         Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                    , f"'{T.idK}' is missing for type object in '{questionStr}'.")
+                                      , f"'{T.idK}' is missing for type object in '{questionStr}'.")
                         qJson[T.validK] = "F"
                     elif not typeObj[T.idK]:
                         Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                    , f"'{T.idK}' has empty value for type object in '{questionStr}'.")
+                                      , f"'{T.idK}' has empty value for type object in '{questionStr}'.")
                         qJson[T.validK] = "F"
                     elif not isinstance(typeObj[T.idK], str):
                         Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                    , f"'{T.idK}' for a type object does not have a string value in '{questionStr}'.")
+                                      ,
+                                      f"'{T.idK}' for a type object does not have a string value in '{questionStr}'.")
                         qJson[T.validK] = "F"
                     elif typeObj[T.idK] in typeIds:
                         Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                    , f"Duplicate 'id={typeObj[T.idK]}' for type object is found in '{questionStr}'.")
+                                      ,
+                                      f"Duplicate 'id={typeObj[T.idK]}' for type object is found in '{questionStr}'.")
                         qJson[T.validK] = "F"
                     else:
                         typeIds.append(typeObj[T.idK])
@@ -227,26 +229,31 @@ class TypesToQueryConverter:
                     # [SC] validate 'type' in type object
                     if T.typeK not in typeObj:
                         Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                    , f"'{T.typeK}' is missing for type object with id '{typeId}' in '{questionStr}'.")
+                                      ,
+                                      f"'{T.typeK}' is missing for type object with id '{typeId}' in '{questionStr}'.")
                         qJson[T.validK] = "F"
                     elif not isinstance(typeObj[T.typeK], str):
                         Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                    , f"'{T.typeK}' is not a string for type object with id '{typeId}' in '{questionStr}'.")
+                                      ,
+                                      f"'{T.typeK}' is not a string for type object with id '{typeId}' in '{questionStr}'.")
                         qJson[T.validK] = "F"
                     elif typeObj[T.typeK] not in hConceptHierarchy:
                         Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                    , f"Invalid 'type={typeObj[T.typeK]}' for type object with id '{typeId}' in '{questionStr}'.")
+                                      ,
+                                      f"Invalid 'type={typeObj[T.typeK]}' for type object with id '{typeId}' in '{questionStr}'.")
                         qJson[T.validK] = "F"
 
                     # [SC] validate 'measureLevel' in type object
                     if T.measureK in typeObj:
                         if not isinstance(typeObj[T.measureK], str):
                             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                        , f"'{T.measureK}' is not a string for type object with id '{typeId}' in '{questionStr}'.")
+                                          ,
+                                          f"'{T.measureK}' is not a string for type object with id '{typeId}' in '{questionStr}'.")
                             qJson[T.validK] = "F"
                         elif typeObj[T.measureK] not in measureHierarchy:
                             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                        , f"Invalid 'measureLevel={typeObj[T.measureK]}' for type object with id '{typeId}' in '{questionStr}'.")
+                                          ,
+                                          f"Invalid 'measureLevel={typeObj[T.measureK]}' for type object with id '{typeId}' in '{questionStr}'.")
                             qJson[T.validK] = "F"
 
                     # [SC][TODO] check cct against all possible expression
@@ -255,83 +262,85 @@ class TypesToQueryConverter:
         # [SC] validate 'extent'
         if T.extentK not in qJson[T.cctransK]:
             Logger.cPrint(Logger.WARNING_TYPE, methodName
-                        , f"'{T.extentK}' not found in '{questionStr}'.")
+                          , f"'{T.extentK}' not found in '{questionStr}'.")
             # qJson[T.validK] = "F"
         else:
             extentObj = qJson[T.cctransK][T.extentK]
             if not isinstance(extentObj, list):
                 Logger.cPrint(Logger.WARNING_TYPE, methodName
-                            , f"'{T.extentK}' is not a list in '{questionStr}'.")
+                              , f"'{T.extentK}' is not a list in '{questionStr}'.")
                 # qJson[T.validK] = "F"
             elif len(extentObj) != 1:
                 Logger.cPrint(Logger.WARNING_TYPE, methodName
-                            , f"'{T.extentK}' should have exactly one value in '{questionStr}'.")
+                              , f"'{T.extentK}' should have exactly one value in '{questionStr}'.")
                 # qJson[T.validK] = "F"
             elif extentObj[0] not in typeIds:
                 Logger.cPrint(Logger.WARNING_TYPE, methodName
-                            , f"'{T.extentK}' has unknown id in '{questionStr}'.")
+                              , f"'{T.extentK}' has unknown id in '{questionStr}'.")
                 # qJson[T.validK] = "F"
 
         # [SC] validate 'transformations'
         if T.transformK not in qJson[T.cctransK]:
             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                        , f"'{T.transformK}' not found for '{questionStr}'.")
+                          , f"'{T.transformK}' not found for '{questionStr}'.")
             qJson[T.validK] = "F"
         elif not isinstance(qJson[T.cctransK][T.transformK], list):
             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                        , f"'{T.transformK}' is not a list in '{questionStr}'.")
+                          , f"'{T.transformK}' is not a list in '{questionStr}'.")
             qJson[T.validK] = "F"
         elif len(qJson[T.cctransK][T.transformK]) == 0:
             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                        , f"'{T.transformK}' should have at least one transformation in '{questionStr}'.")
+                          , f"'{T.transformK}' should have at least one transformation in '{questionStr}'.")
             qJson[T.validK] = "F"
         else:
             # [SC] validate each transformation object
             for trans in qJson[T.cctransK][T.transformK]:
                 if T.beforeK not in trans:
                     Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                , f"'{T.beforeK}' is missing for transformation in '{questionStr}'.")
+                                  , f"'{T.beforeK}' is missing for transformation in '{questionStr}'.")
                     qJson[T.validK] = "F"
                 elif not isinstance(trans[T.beforeK], list):
                     Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                , f"'{T.beforeK}' is not a list in '{questionStr}'.")
+                                  , f"'{T.beforeK}' is not a list in '{questionStr}'.")
                     qJson[T.validK] = "F"
                 elif len(trans[T.beforeK]) == 0:
                     Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                , f"'{T.beforeK}' is an empty list in '{questionStr}'.")
+                                  , f"'{T.beforeK}' is an empty list in '{questionStr}'.")
                     qJson[T.validK] = "F"
                 else:
                     for beforeId in trans[T.beforeK]:
                         if beforeId not in typeIds:
                             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                        , f"'{T.beforeK}' has unknown 'id={beforeId}' in '{questionStr}'.")
+                                          , f"'{T.beforeK}' has unknown 'id={beforeId}' in '{questionStr}'.")
                             qJson[T.validK] = "F"
 
                 if T.afterK not in trans:
                     Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                , f"'{T.afterK}' is missing for transformation in '{questionStr}'.")
+                                  , f"'{T.afterK}' is missing for transformation in '{questionStr}'.")
                     qJson[T.validK] = "F"
                 elif not isinstance(trans[T.afterK], list):
                     Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                , f"'{T.afterK}' is not a list in '{questionStr}'.")
+                                  , f"'{T.afterK}' is not a list in '{questionStr}'.")
                     qJson[T.validK] = "F"
                 elif len(trans[T.afterK]) != 1:
                     Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                , f"'{T.afterK}' should have exactly one value in '{questionStr}'.")
+                                  , f"'{T.afterK}' should have exactly one value in '{questionStr}'.")
                     qJson[T.validK] = "F"
                 elif trans[T.afterK][0] not in typeIds:
                     Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                , f"'{T.afterK}' has unknown 'id={trans[T.afterK][0]}' in '{questionStr}'.")
+                                  , f"'{T.afterK}' has unknown 'id={trans[T.afterK][0]}' in '{questionStr}'.")
                     qJson[T.validK] = "F"
 
                 if T.keyK in trans:
                     if not isinstance(trans[T.keyK], str):
                         Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                    , f"'{T.keyK}' is not a string for transformation '{trans}' in '{questionStr}'.")
+                                      ,
+                                      f"'{T.keyK}' is not a string for transformation '{trans}' in '{questionStr}'.")
                         qJson[T.validK] = "F"
                     elif trans[T.keyK] not in typeIds:
                         Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                    , f"'{T.keyK}' has unknown 'id={trans[T.keyK]}' for transformation '{trans}' in '{questionStr}'.")
+                                      ,
+                                      f"'{T.keyK}' has unknown 'id={trans[T.keyK]}' for transformation '{trans}' in '{questionStr}'.")
                         qJson[T.validK] = "F"
 
 
@@ -412,7 +421,7 @@ class TypesToQueryConverter:
             self.isValidQJson(qJson)
         if qJson[T.validK] != "T":
             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                        , f"Cannot create LHS statement. Invalid JSON structure. None returned.")
+                          , f"Cannot create LHS statement. Invalid JSON structure. None returned.")
             return None
 
         # [SC] add type information; assumed that type contains exactly one value
@@ -449,9 +458,9 @@ class TypesToQueryConverter:
                     # [SC] sanity check; make sure the key's type was successfully extracted
                     if T.keyK not in tempLhs:
                         Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                    , f"Cannot find the type for the key '{transformation[T.keyK]}' " +
-                                    f"of the type object '{parsedTypeObj}' in {qJson[T.questionK]}. " +
-                                    "Assigning 'NA' value to the key's type.")
+                                      , f"Cannot find the type for the key '{transformation[T.keyK]}' " +
+                                      f"of the type object '{parsedTypeObj}' in {qJson[T.questionK]}. " +
+                                      "Assigning 'NA' value to the key's type.")
                         tempLhs[T.keyK] = 'NA'
 
         if inputTypes:
@@ -472,8 +481,8 @@ class TypesToQueryConverter:
 
             if qJson[T.validK] != "T":
                 Logger.cPrint(Logger.ERROR_TYPE, methodName
-                            , f"Cannot generate rule template. Invalid JSON structure. "
-                            + f"The question annotation is skipped. Annotation: {qJson}")
+                              , f"Cannot generate rule template. Invalid JSON structure. "
+                              + f"The question annotation is skipped. Annotation: {qJson}")
                 continue
 
             # [SC] generate a rule for each type
@@ -579,7 +588,7 @@ class TypesToQueryConverter:
                 newRulesAdded += 1
 
         Logger.cPrint(Logger.INFO_TYPE, methodName
-                    , f"{newRulesAdded} new rules were added.")
+                      , f"{newRulesAdded} new rules were added.")
 
 
     # [SC] Derives news rules from the rules in 'existingRules' based on subtypes of measurement levels.
@@ -652,7 +661,7 @@ class TypesToQueryConverter:
                 newRulesAdded += 1
 
         Logger.cPrint(Logger.INFO_TYPE, methodName
-                    , f"{newRulesAdded} new rules were added.")
+                      , f"{newRulesAdded} new rules were added.")
 
 
     # [SC] Creates and returns a deep copy of a given rule.
@@ -717,7 +726,7 @@ class TypesToQueryConverter:
 
         if qJson[T.validK] != "T":
             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                        , f"Cannot generate '{T.cctK}' for {qJson}. Invalid JSON structure.")
+                          , f"Cannot generate '{T.cctK}' for {qJson}. Invalid JSON structure.")
             qJson.pop(T.validK)
             return False
         qJson.pop(T.validK)
@@ -725,11 +734,11 @@ class TypesToQueryConverter:
         # [SC] sanity check
         if not self.isRulesLoaded():
             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                        , f"Rules for annotating with algebra expressions are not loaded.")
+                          , f"Rules for annotating with algebra expressions are not loaded.")
             return False
         if not self.isConsistentRules():
             Logger.cPrint(Logger.ERROR_TYPE, methodName
-                        , f"Rules for annotating with algebra expressions are not consistent.")
+                          , f"Rules for annotating with algebra expressions are not consistent.")
             return False
 
         # [SC] iterate through the question types
@@ -748,12 +757,12 @@ class TypesToQueryConverter:
 
             if not annotatedF:
                 Logger.cPrint(Logger.WARNING_TYPE, methodName
-                                , f"No matching rule to annotate '{parsedTypeObj}' in '{qJson[T.questionK]}'.")
+                              , f"No matching rule to annotate '{parsedTypeObj}' in '{qJson[T.questionK]}'.")
 
         for parsedTypeObj in qJson[T.cctransK][T.typesK]:
             if T.cctK not in parsedTypeObj:
                 Logger.cPrint(Logger.ERROR_TYPE, methodName
-                                , f"'Not all types were annotated with algebra expression for '{qJson[T.questionK]}'.")
+                              , f"'Not all types were annotated with algebra expression for '{qJson[T.questionK]}'.")
                 return False
 
         return True
@@ -764,7 +773,7 @@ class TypesToQueryConverter:
         # [SC][TODO] check if the rules were loaded
         # [SC][TODO] make sure every type is annotated with cct before returning True
 
-        methodName = "TypesToQueryConverter.typesToCCT"
+        methodName = "TypesToQueryConverter.typesToCCTDebug"
 
         if T.validK not in qJson:
             self.isValidQJson(qJson)
@@ -839,7 +848,7 @@ class TypesToQueryConverter:
             self.isValidQJson(qJson)
             if qJson[T.validK] != "T":
                 Logger.cPrint(Logger.ERROR_TYPE, methodName
-                            , f"Cannot generate query for {qJson}. Invalid JSON structure.")
+                              , f"Cannot generate query for {qJson}. Invalid JSON structure.")
                 qJson.pop(T.validK)
                 return
             qJson.pop(T.validK)
@@ -848,7 +857,7 @@ class TypesToQueryConverter:
             # [SC] sanity check
             if not self.typesToCCT(qJson):
                 Logger.cPrint(Logger.ERROR_TYPE, methodName
-                            , f"Cannot annotate types with algebra expressions for '{qJson[T.questionK]}'.")
+                              , f"Cannot annotate types with algebra expressions for '{qJson[T.questionK]}'.")
                 return
 
         trans = qJson[T.cctransK][T.transformK]
